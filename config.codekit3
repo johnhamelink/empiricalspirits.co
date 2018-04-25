@@ -412,6 +412,17 @@
 		"oAP": "\/assets\/fonts\/gt-america-expanded-medium.woff2",
 		"oF": 0
 		},
+	"\/assets\/icons\/plate-icon.png": {
+		"ft": 32768,
+		"iS": 204930,
+		"oA": 0,
+		"oAP": "\/assets\/icons\/plate-icon.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/assets\/icons\/symbol-defs.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -7486,6 +7497,102 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/bower_components\/rellax\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/rellax\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/rellax\/css\/bootstrap.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/css\/bootstrap.min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/rellax\/css\/main.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/css\/main.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/rellax\/demo.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/demo.html",
+		"oF": 0
+		},
+	"\/bower_components\/rellax\/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/LICENSE",
+		"oF": 0
+		},
+	"\/bower_components\/rellax\/package.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/package.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/rellax\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/rellax\/rellax.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/rellax\/rellax.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/rellax\/rellax.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/bower_components\/rellax\/rellax.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/bower_components\/svgxuse\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -7898,6 +8005,12 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/what-input\/dist\/what-input.js",
 			"position": 5,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/rellax\/rellax.min.js",
+			"position": 6,
 			"type": 0
 			}
 		]

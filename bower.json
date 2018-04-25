@@ -37,7 +37,8 @@
     "foundation-sites": "^6.4.3",
     "svgxuse": "^1.2.4",
     "what-input": "^5.0.2",
-    "lightgallery": "^1.6.6"
+    "lightgallery": "^1.6.6",
+    "rellax": "*"
   },
   "resolutions": {
     "what-input": "^5.0.2"

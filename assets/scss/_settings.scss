@@ -73,7 +73,8 @@ $global-lineheight: 1.4;
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
-$black: #0a0a0a;
+// $black: #0a0a0a;
+$black: #262222;
 $white: #fefefe;
 $foundation-palette: (
   primary: $white,
@@ -440,7 +441,7 @@ $input-font-size: rem-calc(16);
 $input-font-weight: $global-weight-normal;
 $input-line-height: $global-lineheight;
 // $input-background: $white;
-$input-background: $black;
+$input-background: transparent;
 $input-background-focus: $white;
 // $input-background-disabled: $light-gray;
 $input-background-disabled: $white;

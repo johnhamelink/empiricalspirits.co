@@ -30,15 +30,6 @@ $(function() {
 window.addEventListener('load', AOS.refresh);
 });
 
-// 3. Light Gallery
-// ----------------
-
-$('.lightgallery').lightGallery({
-  selector: ".grid-item",
-  download: false,
-  mode: 'lg-fade'
-}); 
-
 // 4. Background
 // ----------------
 
@@ -47,4 +38,8 @@ $("a.link").hover(function() {
   $("body").css("background-image", "url(" + $(this).data("bg") + ")");
 	}, function() {
 	$("body").css("background-image", '');
+});
+
+$(function() {
+var rellax = new Rellax('.rellax');
 });
