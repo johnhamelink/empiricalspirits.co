@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26680",
 "files": {
+	"\/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitattributes",
+		"oF": 0
+		},
 	"\/404.md": {
 		"cB": 0,
 		"cS": 0,
@@ -404,6 +411,16 @@
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/gt-america-expanded-medium.woff2",
 		"oF": 0
+		},
+	"\/assets\/icons\/symbol-defs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/icons\/symbol-defs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/assets\/img\/logo.svg": {
 		"ft": 2097152,
@@ -7764,13 +7781,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/Gemfile",
-		"oF": 0
-		},
-	"\/Gemfile.lock": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/Gemfile.lock",
 		"oF": 0
 		},
 	"\/humans.txt": {
