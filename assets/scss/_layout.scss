@@ -153,8 +153,16 @@ i, cite, em, var, address, dfn {
   margin-right: -15rem;
 }
 
-.section-title {
+.section__title {
   letter-spacing: $letter-spacing--loose;
+}
+
+.home__products__title {
+//   -webkit-text-stroke: 2px $black;
+  &:hover {
+  color: $black;
+  -webkit-text-stroke: 2px $white;
+  }
 }
 
 .home__hero__video {
