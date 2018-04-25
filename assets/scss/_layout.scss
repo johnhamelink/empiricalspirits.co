@@ -1,0 +1,151 @@
+//  Table of Contents:
+//
+//   1. Mixins
+//   2. Global
+//   3. Typography
+//   4. Buttons
+//   4. Navigation
+//   5. Sections
+//   6. Section One
+//   7. Section Two
+//   8. Section Three
+//   9. Section Four
+//   10. Projects
+//   11. Contact
+//   12. Footer
+
+
+// 1. Mixins
+// ---------
+
+@mixin links ($link, $hover) {
+  a {
+    color: $link;
+    &:hover {
+      color: $hover;   
+    }
+  }
+}
+
+// 2. Global
+// ---------
+
+body {
+  cursor: default;
+  font-kerning: normal;
+}
+
+svg {
+  max-width: 100%;
+}
+
+::selection {
+  background: $primary-color;
+  color: $secondary-color;
+}
+
+:focus {
+  outline: 0;
+}
+
+
+
+// 3. Typography
+// -------------
+
+i, cite, em, var, address, dfn {
+  font-style: normal;
+}
+
+
+// 5. Loading
+// ------
+
+.loader {
+  z-index: 3;
+  position: fixed;
+  background: $white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+  opacity: 1;
+  transition: $primary-transition;
+  visibility: visible; 
+  &.loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+// 6. Navigation
+// ------
+
+.navigation__logo {
+  z-index: 2;
+}
+
+.navigation__job {
+  z-index: 2;
+}
+
+.navigation__job {
+  color: $secondary-color;
+}
+
+.navigation__menu {
+  z-index: 2;
+}
+
+.navigation--mobile {
+  z-index: 1;
+  position: fixed;
+  background: $white;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; 
+  opacity: 0;
+  transition: $primary-transition;
+  visibility: hidden;
+  font-family: $header-font-family;
+  font-size: 1.25rem;
+  &.open {
+    opacity: 1;
+    visibility: visible;
+  }
+  a {
+   padding: 1rem 0rem;
+  }
+}
+
+.home__hero {
+  position: relative;
+}
+
+.home__hero__navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.home__hero__logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1;
+  height: 100%;
+  h1 {
+    font-size: 10rem;
+    line-height: 0.95;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+.section-title {
+  letter-spacing: $letter-spacing--loose;
+}

@@ -1,0 +1,128 @@
+---
+layout: default
+---
+
+<!-- Hero -->
+<section class="home__hero">
+
+  
+  <div class="home__hero__navigation">
+  {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
+  <!-- Navigation -->
+  <div class="grid-x grid-padding-x grid-padding-y align-justify">
+    
+    <div class="auto cell navigation__logo">
+      <ul class="menu simple align-bottom">
+          <li><a href="/">{{site.title}}</a></li>
+      </ul>
+    </div>
+    
+    <div class="shrink cell navigation__menu">
+      <ul class="menu simple align-bottom">
+        {% for entry in site.data.navigation %}
+        {% if entry.url == current_page %}
+        {% assign current = ' class="active"' %}
+        {% else %}
+        {% assign current = null %}
+        {% endif %}
+        {% assign sublinks = entry.sublinks %}
+        {% if sublinks %}
+        <li{{ current }}>
+        <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+        <ul class="menu vertical">
+        {% for sublink in sublinks %}
+        <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+        {% endfor %}
+        </ul>
+        </li>
+        {% else %}
+        <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}" class="{{ entry.color }}">{{ entry.title }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <!-- End Navigation -->
+  </div>
+  
+
+  <div class="home__hero__video">
+    <div class="responsive-embed widescreen">
+      <video autoplay muted>
+        <source src="assets/videos/hero.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>  
+    </div>
+  </div>
+  
+  <div class="home__hero__logo padding-3">
+    <div class="grid-y align-center" style="height: 100%;">
+      
+      <div class="cell shrink text-uppercase">
+        
+        <div class="grid-x align-center">
+          <div class="cell small-12">
+          <h1>Empirical Spirits</h1>
+          <h2>Empirical Spirits is about swerving categories</h2>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</section>
+<!-- End Hero -->
+
+<!-- Introduction -->
+<section class="home__introduction margin-top-3 margin-bottom-3">
+  <div class="grid-container">
+    <div class="grid-x">
+        <div class="small-12 medium-10 cell" data-aos="fade-in">
+          <h2>Choosing heirloom grains, koji and bespoke yeasts to ferment in-house, our one-off spirits reflect the time and place they came from: a product made in spring might taste different to one made in the fall. To help us highlight those differences, we have designed and built equipment that allows us to distill at 10°C, rather than boiling all the flavour away</h2>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Introduction -->
+
+<!-- Images -->
+<section class="home__images margin-top-3 margin-bottom-3">
+  <div class="grid-container">
+    <div class="grid-x small-up-2">
+      {% for detail in page.images %}
+        <div class="cell" data-aos="fade-in">
+          <img src="{{ detail.image }}">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- End Images -->
+
+<!-- Products -->
+<section class="home__products margin-top-3 margin-bottom-3">
+  <div class="grid-container">
+    <div class="grid-x">
+        <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
+          <h1 class="section__title">Bottles</h1>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Products -->
+
+<!-- Images -->
+<section class="home__images margin-top-3 margin-bottom-3">
+  <div class="grid-container">
+    <div class="grid-x small-up-2">
+      {% for detail in page.images %}
+        <div class="cell" data-aos="fade-in">
+          <img src="{{ detail.image }}">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- End Images -->
