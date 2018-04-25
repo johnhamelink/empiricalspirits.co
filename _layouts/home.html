@@ -47,30 +47,36 @@ layout: default
   
 
   <div class="home__hero__video">
-    <div class="responsive-embed widescreen">
-      <video autoplay muted>
-        <source src="assets/videos/hero.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>  
-    </div>
+    <video src="assets/videos/hero.mp4" autoplay muted playsinline loop></video>   
   </div>
   
-  <div class="home__hero__logo padding-3">
-    <div class="grid-y align-center" style="height: 100%;">
+  
+  <div class="home__hero__logo">
+  <div class="grid-y align-center" style="height: 100%;">
+    <div class="cell shrink">
       
-      <div class="cell shrink text-uppercase">
-        
-        <div class="grid-x align-center">
-          <div class="cell small-12">
-          <h1>Empirical Spirits</h1>
-          <h2>Empirical Spirits is about swerving categories</h2>
+        <div class="grid-x align-right">
+          <div class="cell shrink home__hero__logo__one">
+            <svg class="icon icon-empirical"><use xlink:href="/assets/icons/symbol-defs.svg#icon-empirical"></use></svg>
           </div>
         </div>
         
-      </div>
-      
+        <div class="grid-x align-left">
+          <div class="cell shrink home__hero__logo__two">
+            <svg class="icon icon-empirical"><use xlink:href="/assets/icons/symbol-defs.svg#icon-empirical"></use></svg>
+          </div>
+        </div>
+        
+        <div class="grid-x align-right">
+          <div class="cell shrink home__hero__logo__three">
+            <svg class="icon icon-spirits"><use xlink:href="/assets/icons/symbol-defs.svg#icon-spirits"></use></svg>
+          </div>
+        </div>
+
     </div>
   </div>
+  </div>
+
   
 </section>
 <!-- End Hero -->
@@ -90,7 +96,7 @@ layout: default
 <!-- Images -->
 <section class="home__images margin-top-3 margin-bottom-3">
   <div class="grid-container">
-    <div class="grid-x small-up-2">
+    <div class="grid-x grid-padding-x grid-padding-y small-up-2">
       {% for detail in page.images %}
         <div class="cell" data-aos="fade-in">
           <img src="{{ detail.image }}">
