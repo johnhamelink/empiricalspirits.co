@@ -7,7 +7,47 @@ images:
 - image: "/uploads/room.jpg"
 - image: "/uploads/sieves.jpg"
 - image: "/uploads/vacuum.jpg"
-products: 
+products:
+- title: Easy Tiger
+  botanicals: Quince Tea, Kombucha
+  grains: Naked Barley, Pearled Barley, Pilsner Malt
+  koji: Aspergillus Oryzae
+  yeast: Belgian Saison 2 WLP 566
+  volume: 70cl
+  abv: 35%
+  maturation: 
+- title: Fallen Pony Blend
+  botanicals: Quince Tea, Quince Tea Kombucha
+  grains: Naked Barley, Pearled Barley, Pilsner Malt
+  koji: Aspergillus Oryzae
+  yeast: Belgian Saison 2 WLP 566
+  volume: 70cl
+  abv: 35%
+  maturation: 
+- title: Charlene McGee Blend
+  botanicals: Smoked Juniper
+  grains: Naked Barley, Pearled Barley, Pilsner Malt
+  koji: Aspergillus Oryzae
+  yeast: Belgian Saison 2 WLP 566
+  volume: 70cl
+  abv: 40%
+  maturation: Oloroso Cask
+- title: Anne Bonny Blend
+  botanicals: Oyster, Gooseberry
+  grains: Naked Barley, Pearled Barley, Pilsner Malt
+  koji: Aspergillus Oryzae
+  yeast: Belgian Saison 2 WLP 566
+  volume: 70cl
+  abv: 34%
+  maturation: 
+- title: Clarence & Alabama Blend
+  botanicals: Lemon Verbena, Douglas Fir Kombucha
+  grains: Naked Barley, Pearled Barley, Pilsner Malt
+  koji: Aspergillus Oryzae
+  yeast: Belgian Saison 2 WLP 566
+  volume: 70cl
+  abv: 33%
+  maturation: 
 layout: home
 ---
 
