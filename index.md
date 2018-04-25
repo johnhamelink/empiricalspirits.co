@@ -7,7 +7,7 @@ images:
 - image: "/uploads/room.jpg"
 - image: "/uploads/sieves.jpg"
 - image: "/uploads/vacuum.jpg"
-products:
+products: 
 layout: home
 ---
 
