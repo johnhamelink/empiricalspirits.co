@@ -9,7 +9,9 @@ images:
 - image: "/uploads/room.jpg"
   text: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
 - image: "/uploads/sieves.jpg"
-  text: 
+  text: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam
+    id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et
+    magnis dis parturient montes, nascetur ridiculus mus.
 - image: "/uploads/vacuum.jpg"
   text: Our homemade vacuum still, Diessel. Operates at 10 degrees celcius.
 products:
