@@ -171,6 +171,14 @@ i, cite, em, var, address, dfn {
   min-height: 100vh;
 }
 .home__products__title {
+   text-align: justify;
+   text-align-last: justify;
+   line-height: 0.95;
+   &:after {
+   content: "";
+   display: inline-block;
+   width: 100%;
+   }
   &:hover {
   color: $black;
   -webkit-text-stroke: 2px $white;
