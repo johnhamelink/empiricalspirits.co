@@ -16,7 +16,8 @@ defaults:
     layout: post
 url: https://www.empiricalspirits.co
 baseurl: 
-description: Empirical Spirits. A Copenhagen-based distillery and fermentation workshop. On a constant search for flavor.
+description: Empirical Spirits. A Copenhagen-based distillery and fermentation workshop.
+  On a constant search for flavor.
 permalink: pretty
 exclude:
 - bower.json
