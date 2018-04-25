@@ -1,0 +1,189 @@
+---
+layout: default
+---
+
+<!-- Hero -->
+<section class="home__hero">
+
+  
+  <div class="home__hero__navigation padding-3">
+    {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
+    <!-- Navigation -->
+    <div class="grid-x grid-padding-x grid-padding-y align-justify">
+      
+      <div class="auto cell navigation__logo">
+        <ul class="menu simple align-bottom">
+            <li><a href="/"><img src="/assets/icons/plate-icon.png" class="navigation__logo__image"></a></li>
+        </ul>
+      </div>
+      
+      <div class="shrink cell navigation__menu">
+        <ul class="menu simple align-center text-uppercase">
+          {% for entry in site.data.navigation %}
+          {% if entry.url == current_page %}
+          {% assign current = ' class="active"' %}
+          {% else %}
+          {% assign current = null %}
+          {% endif %}
+          {% assign sublinks = entry.sublinks %}
+          {% if sublinks %}
+          <li{{ current }}>
+          <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+          <ul class="menu vertical">
+          {% for sublink in sublinks %}
+          <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+          {% endfor %}
+          </ul>
+          </li>
+          {% else %}
+          <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}" class="{{ entry.color }}">{{ entry.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <!-- End Navigation -->
+  </div>
+  
+
+  <div class="home__hero__video padding-2">
+    <video src="assets/videos/hero.mp4" autoplay muted playsinline loop></video>   
+  </div>
+  
+  
+  <div class="home__hero__logo rellax" data-rellax-speed="1">
+  <div class="grid-y align-center" style="height: 100%;">
+    <div class="cell shrink">
+      
+        <div class="grid-x align-right">
+          <div class="cell shrink home__hero__logo__one rellax" data-rellax-speed="1">
+            <svg class="icon icon-empirical"><use xlink:href="/assets/icons/symbol-defs.svg#icon-empirical"></use></svg>
+          </div>
+        </div>
+        
+        <div class="grid-x align-left">
+          <div class="cell shrink home__hero__logo__two rellax" data-rellax-speed="1">
+            <svg class="icon icon-empirical"><use xlink:href="/assets/icons/symbol-defs.svg#icon-empirical"></use></svg>
+          </div>
+        </div>
+        
+        <div class="grid-x align-right">
+          <div class="cell shrink home__hero__logo__three rellax" data-rellax-speed="1">
+            <svg class="icon icon-spirits"><use xlink:href="/assets/icons/symbol-defs.svg#icon-spirits"></use></svg>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+  
+</section>
+<!-- End Hero -->
+
+<section class="content">
+<!-- Introduction -->
+<section class="home__introduction margin-bottom-3 rellax" data-rellax-speed="1" style="margin-top: -7.5rem;">
+  <div class="grid-container">
+    <div class="grid-x">
+        <div class="small-12 medium-10 cell" data-aos="fade-in">
+          <h2>Choosing heirloom grains, koji and bespoke yeasts to ferment in-house, our one-off spirits reflect the time and place they came from: a product made in spring might taste different to one made in the fall. To help us highlight those differences, we have designed and built equipment that allows us to distill at 10°C, rather than boiling all the flavour away</h2>
+        </div>
+    </div>
+  </div>
+</section>
+<!-- End Introduction -->
+
+<!-- Images -->
+<section class="home__images rellax" data-rellax-speed="0">
+    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3">
+      {% for detail in page.images %}
+        <div class="cell" data-aos="fade-in">
+          <img src="{{ detail.image }}">
+          <div class="margin-top-1"><small>{{detail.text}}</small></div>
+        </div>
+      {% endfor %}
+    </div>
+</section>
+<!-- End Images -->
+
+<!-- Products -->
+<section class="home__products rellax" data-rellax-speed="-1">
+
+  <div class="grid-x padding-3">
+      <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
+        <h3 class="section__title">Bottles</h3>
+      </div>
+  </div>
+
+  <div class="grid-y align-center padding-3" style="min-height: 80vh;">
+    <div class="shrink cell">
+    
+    <div class="grid-x">
+      {% for product in page.products %}
+        <div class="cell small-12 text-uppercase" data-aos="fade-in">
+          <h1 class="home__products__title">{{product.title}}</h1>
+        </div>
+      {% endfor %}
+    </div>
+    
+    </div>
+  </div>
+    
+</section>
+<!-- End Products -->
+
+
+<!-- Stockists -->
+<section class="home__stockists rellax" data-rellax-speed="-1">
+
+  <div class="grid-x padding-3">
+      <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
+        <h3 class="section__title">Stockists</h3>
+      </div>
+  </div>
+
+  
+  <div class="grid-x padding-3">
+    {% for stockist in page.stockists %}
+      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
+        <a href="{{ stockist.link}}" target="_blank"><h1 class="home__stockist__title">{{stockist.title}}</h1></a>
+      </div>
+    {% endfor %}
+  </div>
+    
+</section>
+<!-- End Stockists -->
+
+<!-- Newsletter -->
+<section class="home__newsletter rellax" data-rellax-speed="-1">
+
+  <div class="grid-x padding-3">
+      <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
+        <h3 class="section__title">Newsletter</h3>
+      </div>
+  </div>
+
+  
+  <div class="grid-x padding-3 align-center">
+          
+          <div class="small-12 medium-6 cell" data-aos="fade-in">
+          <form action="" method="post" class="validate" target="_blank" novalidate="">
+            
+            <div class="input-group">
+              <input class="input-group-field" type="email" value="" name="EMAIL" placeholder="Email">
+              
+              <div class="input-group-button">
+                <button type="submit" class="button postfix hollow" name="subscribe" value="Subscribe">
+                  Yes
+                </button>
+              </div>
+            </div>
+            
+          </form>
+          </div>
+  </div>
+    
+</section>
+</section>
+<!-- End Newsletter -->
