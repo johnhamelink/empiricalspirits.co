@@ -3,10 +3,15 @@ title: Home
 position: 0
 images:
 - image: "/uploads/barley.jpg"
+  text: Organic barley.
 - image: "/uploads/douglas-fir-02.jpg"
+  text: Douglas fir. Picked north of Copenhagen.
 - image: "/uploads/room.jpg"
+  text: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
 - image: "/uploads/sieves.jpg"
+  text: 
 - image: "/uploads/vacuum.jpg"
+  text: Our homemade vacuum still, Diessel. Operates at 10 degrees celcius.
 products:
 - title: Easy Tiger
   botanicals: Quince Tea, Kombucha
