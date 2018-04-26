@@ -30,6 +30,7 @@ products:
   abv: 35%
   maturation: 
   link: https://shop.empiricalspirits.co
+  color: "#ff0000"
 - title: Fallen Pony Blend
   image: "/uploads/sieves.jpg"
   botanicals: Quince Tea, Quince Tea Kombucha
