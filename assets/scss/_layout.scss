@@ -126,10 +126,8 @@ i, cite, em, var, address, dfn {
 }
 
 .content {
-/*
 background: rgb(38,34,34);
 background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, rgba(38,34,34,1) 54%, rgba(28,111,97,1) 63%, rgba(23,127,109,1) 68%, rgba(18,136,117,1) 76%, rgba(64,44,37,1) 84%, rgba(38,34,34,1) 97%, rgba(38,34,34,1) 100%);
-*/
 }
 
 .home__hero {
@@ -180,6 +178,10 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
 }
 
 .home__products {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; 
+  background-size: auto 75%;
 }
 
 .home__products__title {
@@ -204,6 +206,10 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
   }
 }
 
+.home__hero__logo__split {
+  width: 100%;
+  height: auto;
+}
 
 
 .masonry-css {
