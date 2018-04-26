@@ -118,6 +118,13 @@
 		"oAP": "\/_includes\/navigation.html",
 		"oF": 0
 		},
+	"\/_includes\/offcanvas.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_includes\/offcanvas.html",
+		"oF": 0
+		},
 	"\/_includes\/overlay_menu.html": {
 		"cB": 0,
 		"ft": 8192,

@@ -11,6 +11,13 @@ layout: compress
 
 <body>
 
+<!-- Off Canvas Navigation -->
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+{% include offcanvas.html %}
+</div>
+<!-- End Off Canvas Navigation --> 
+
+<div class="off-canvas-content {{page.layout | slugify}}" data-off-canvas-content>
 <!-- Content -->
 {{content}}
 
@@ -19,6 +26,7 @@ layout: compress
 <!-- Footer -->
 {% include footer.html %}
 <!-- End Footer-->
+</div>
 
 <!-- Scripts -->
 {% include scripts.html %}
