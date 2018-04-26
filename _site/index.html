@@ -33,7 +33,7 @@
 </head>
 <body>
 <section class="home__hero">
-  <div class="home__hero__navigation padding-1 hide-for-small-only">
+  <div class="home__hero__navigation padding-1">
     <div class="grid-x grid-padding-x grid-padding-y align-justify">
       <div class="auto cell navigation__logo">
         <ul class="menu simple align-bottom">
@@ -42,10 +42,11 @@
       </div>
       <div class="shrink cell navigation__menu">
         <ul class="menu simple align-center text-uppercase">
-          <li><a href="https://shop.empiricalspirits.co" class="option"><span>Buy<span></a></li>
-          <li><a href="/cocktails/" class="option"><span>Cocktails<span></a></li>
-          <li><a href="/sign-up/" class="option"><span>Sign Up<span></a></li>
-          <li><a href="/contact/" class="option"><span>Contact<span></a></li>
+          <li><a href="https://shop.empiricalspirits.co" class="option" ><span>Buy<span></a></li>
+          <li><a href="#bottles" class="option" data-smooth-scroll><span>Bottles<span></a></li>
+          <li><a href="/cocktails/" class="option" ><span>Cocktails<span></a></li>
+          <li><a href="#newsletter" class="option" data-smooth-scroll><span>Sign Up<span></a></li>
+          <li><a href="mailto:someone@yoursite.com" class="option" ><span>Contact<span></a></li>
         </ul>
       </div>
     </div>
@@ -62,11 +63,18 @@
   </div>
 </section>
 <section class="content">
-<section class="home__introduction margin-bottom-3" style="margin-top: -7.5rem;">
+<section class="home__introduction margin-bottom-3" style="margin-top: -8rem;">
+  <div class="grid-container">
+    <div class="grid-x margin-bottom-2">
+        <div class="small-12 medium-12 cell text-uppercase" data-aos="fade-in">
+          <h2>Empirical Spirits is about swerving the categories</h2>
+        </div>
+    </div>
+  </div>
   <div class="grid-container">
     <div class="grid-x">
         <div class="small-12 medium-10 cell" data-aos="fade-in">
-          <h2>Choosing heirloom grains, koji and bespoke yeasts to ferment in-house, our one-off spirits reflect the time and place they came from: a product made in spring might taste different to one made in the fall. To help us highlight those differences, we have designed and built equipment that allows us to distill at 10°C, rather than boiling all the flavour away</h2>
+          <h3>Choosing heirloom grains, koji and bespoke yeasts to ferment in-house, our one-off spirits reflect the time and place they came from: a product made in spring might taste different to one made in the fall. To help us highlight those differences, we have designed and built equipment that allows us to distill at 10°C, rather than boiling all the flavour away</h3>
         </div>
     </div>
   </div>
@@ -87,7 +95,7 @@
 "
 alt="Organic barley"
 >
-              <div class="margin-top-1"><small>Organic barley.</small></div>
+              <div class="width-50 margin-top-1"><small>Organic barley.</small></div>
             </div>
             <div class="masonry-css-item" data-aos="fade-in">
               <img data-interchange=
@@ -100,7 +108,7 @@ alt="Organic barley"
 "
 alt="Douglas Fir"
 >
-              <div class="margin-top-1"><small>Douglas fir. Picked north of Copenhagen.</small></div>
+              <div class="width-50 margin-top-1"><small>Douglas fir. Picked north of Copenhagen.</small></div>
             </div>
             <div class="masonry-css-item" data-aos="fade-in">
               <img data-interchange=
@@ -113,7 +121,7 @@ alt="Douglas Fir"
 "
 alt=""
 >
-              <div class="margin-top-1"><small>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</small></div>
+              <div class="width-50 margin-top-1"><small>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</small></div>
             </div>
             <div class="masonry-css-item" data-aos="fade-in">
               <img data-interchange=
@@ -126,7 +134,7 @@ alt=""
   "
   alt=""
 >
-              <div class="margin-top-1"><small>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</small></div>
+              <div class="width-50 margin-top-1"><small>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</small></div>
             </div>
             <div class="masonry-css-item" data-aos="fade-in">
               <img data-interchange=
@@ -139,36 +147,83 @@ alt=""
 "
 alt=""
 >
-              <div class="margin-top-1"><small>Our homemade vacuum still, Diessel. Operates at 10 degrees celcius.</small></div>
+              <div class="width-50 margin-top-1"><small>Our homemade vacuum still, Diessel. Operates at 10 degrees celcius.</small></div>
             </div>
     </div>
 </section>
-<section class="home__products">
+<section class="home__products" id="bottles">
   <div class="grid-x padding-1">
       <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
         <h5 class="section__title">Bottles</h3>
       </div>
   </div>
-  <div class="grid-y align-center padding-top-2 padding-right-1 padding-bottom-2 padding-left-1">
-    <div class="shrink cell">
-    <div class="grid-x">
-        <div class="cell small-12 text-uppercase" data-aos="fade-in">
-          <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/easy-tiger.jpg"><h1 class="home__products__title">Easy Tiger</h1></a>
+  <div class="grid-x grid-padding-x padding-3">
+      <div class="cell small-12 medium-8 text-uppercase">
+        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/easy-tiger.jpg"><h1 class="home__products__title">Easy Tiger</h1></a>
+      </div>
+      <div class="cell small-12 medium-4 text-uppercase">
+        <div class="home__products__details">
+        <h5>Botanicals — Quince Tea, Kombucha</h5>
+        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
+        <h5>Grains — Aspergillus Oryzae</h5>
+        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
+        <h5>Volume — 70cl</h5>
+        <h5>ABV — 35%</h5>
         </div>
-        <div class="cell small-12 text-uppercase" data-aos="fade-in">
-          <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/fallen-pony.jpg"><h1 class="home__products__title">Fallen Pony Blend</h1></a>
+      </div>
+      <div class="cell small-12 medium-8 text-uppercase">
+        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/fallen-pony.jpg"><h1 class="home__products__title">Fallen Pony Blend</h1></a>
+      </div>
+      <div class="cell small-12 medium-4 text-uppercase">
+        <div class="home__products__details">
+        <h5>Botanicals — Quince Tea, Quince Tea Kombucha</h5>
+        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
+        <h5>Grains — Aspergillus Oryzae</h5>
+        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
+        <h5>Volume — 70cl</h5>
+        <h5>ABV — 35%</h5>
         </div>
-        <div class="cell small-12 text-uppercase" data-aos="fade-in">
-          <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/charlene-mcgee.jpg"><h1 class="home__products__title">Charlene McGee Blend</h1></a>
+      </div>
+      <div class="cell small-12 medium-8 text-uppercase">
+        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/charlene-mcgee.jpg"><h1 class="home__products__title">Charlene McGee Blend</h1></a>
+      </div>
+      <div class="cell small-12 medium-4 text-uppercase">
+        <div class="home__products__details">
+        <h5>Botanicals — Smoked Juniper</h5>
+        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
+        <h5>Grains — Aspergillus Oryzae</h5>
+        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
+        <h5>Maturation – Oloroso Cask</h5>
+        <h5>Volume — 70cl</h5>
+        <h5>ABV — 40%</h5>
         </div>
-        <div class="cell small-12 text-uppercase" data-aos="fade-in">
-          <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/anne-bonny.jpg"><h1 class="home__products__title">Anne Bonny Blend</h1></a>
+      </div>
+      <div class="cell small-12 medium-8 text-uppercase">
+        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/anne-bonny.jpg"><h1 class="home__products__title">Anne Bonny Blend</h1></a>
+      </div>
+      <div class="cell small-12 medium-4 text-uppercase">
+        <div class="home__products__details">
+        <h5>Botanicals — Oyster, Gooseberry</h5>
+        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
+        <h5>Grains — Aspergillus Oryzae</h5>
+        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
+        <h5>Volume — 70cl</h5>
+        <h5>ABV — 34%</h5>
         </div>
-        <div class="cell small-12 text-uppercase" data-aos="fade-in">
-          <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/clarence-alabama.jpg"><h1 class="home__products__title">Clarence & Alabama Blend</h1></a>
+      </div>
+      <div class="cell small-12 medium-8 text-uppercase">
+        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/clarence-alabama.jpg"><h1 class="home__products__title">Clarence & Alabama Blend</h1></a>
+      </div>
+      <div class="cell small-12 medium-4 text-uppercase">
+        <div class="home__products__details">
+        <h5>Botanicals — Lemon Verbena, Douglas Fir Kombucha</h5>
+        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
+        <h5>Grains — Aspergillus Oryzae</h5>
+        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
+        <h5>Volume — 70cl</h5>
+        <h5>ABV — 33%</h5>
         </div>
-    </div>
-    </div>
+      </div>
   </div>
 </section>
 <section class="home__stockists">
@@ -216,13 +271,13 @@ alt=""
       </div>
   </div>
 </section>
-<section class="home__newsletter">
-  <div class="grid-x padding-1">
+<section class="home__newsletter padding-top-3 padding-bottom-3" id="newsletter">
+  <div class="grid-x padding-top-1 padding-bottom-1">
       <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
         <h5 class="section__title">Newsletter</h3>
       </div>
   </div>
-  <div class="grid-x padding-1 align-center">
+  <div class="grid-x padding-top-1 padding-bottom-1 align-center">
           <div class="small-12 medium-6 cell" data-aos="fade-in">
           <form action="" method="post" class="validate" target="_blank" novalidate="">
             <div class="input-group">

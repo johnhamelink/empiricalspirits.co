@@ -213,7 +213,7 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
 
 
 .masonry-css {
-  column-gap: $global-margin;
+  column-gap: 2rem;
   @include breakpoint(small) {
     column-count:1;
   }
@@ -225,7 +225,7 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
 .masonry-css-item {
   column-break-inside: avoid;
   break-inside: avoid;
-  margin-bottom: $global-margin;
+  margin-bottom: 2rem;
   webkit-padding-after: 0;
   display: inline-block;
 }
@@ -271,4 +271,8 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
   background: transparent;
   width: 100%;
   transition: 0s;
+}
+
+.home__products__details {
+  display: none
 }

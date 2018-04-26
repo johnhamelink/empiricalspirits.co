@@ -40,6 +40,8 @@ $("a.link").hover(function() {
 	$(".home__products").css("background-image", '');
 });
 
+/*
 $(function() {
 var rellax = new Rellax('.rellax');
 });
+*/
