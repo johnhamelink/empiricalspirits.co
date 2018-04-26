@@ -34,6 +34,7 @@ plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 - jekyll-feed
+- jekyll/imgix
 markdown: kramdown
 kramdown:
   auto_ids: false
@@ -57,4 +58,5 @@ compress_html:
   - " -->"
   blanklines: true
   profile: false
-imgix: https://empirical-spirits.imgix.net
+imgix:
+  source: https://empirical-spirits.imgix.net

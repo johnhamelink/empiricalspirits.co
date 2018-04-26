@@ -14,7 +14,6 @@ layout: default
       <div class="auto cell navigation__logo">
         <ul class="menu simple align-bottom">
             <li><a href="/"><img src="/assets/icons/plate-icon.png" class="navigation__logo__image"></a></li>
-            <h1>{{site.imgix}}</h1>
         </ul>
       </div>
       
@@ -100,7 +99,8 @@ layout: default
     <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3">
       {% for detail in page.images %}
         <div class="cell" data-aos="fade-in">
-          <img src="{{ detail.image }}">
+          <img data-interchange="[{{ detail.image }}, small], [{{ detail.image }}, medium], [{{ detail.image }}, large]">
+          
           <div class="margin-top-1"><small>{{detail.text}}</small></div>
         </div>
       {% endfor %}
