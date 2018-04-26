@@ -58,9 +58,5 @@ compress_html:
   - " -->"
   blanklines: true
   profile: false
-<<<<<<< HEAD
 imgix:
   source: https://empirical-spirits.imgix.net
-=======
-imgix: https://empirical-spirits.imgix.net
->>>>>>> 343d670e5a59d020ed84dc7157958c1de087ba70
