@@ -166,6 +166,17 @@
 		"oAP": "\/build\/_site",
 		"oF": 0
 		},
+	"\/_uploads\/anne-bonny.jpg": {
+		"ft": 16384,
+		"iS": 2069090,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/anne-bonny.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/_uploads\/barley.jpg": {
 		"ft": 16384,
 		"iS": 1825078,
@@ -175,6 +186,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/charlene-mcgee.jpg": {
+		"ft": 16384,
+		"iS": 3415983,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/charlene-mcgee.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/_uploads\/clarence-alabama.jpg": {
+		"ft": 16384,
+		"iS": 3154844,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/clarence-alabama.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/douglas-fir-01.jpg": {
@@ -197,6 +230,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/easy-tiger.jpg": {
+		"ft": 16384,
+		"iS": 2958337,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/easy-tiger.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/_uploads\/fallen-pony.jpg": {
+		"ft": 16384,
+		"iS": 3042585,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/fallen-pony.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/room.jpg": {
@@ -7943,7 +7998,7 @@
 		"oA": 2,
 		"oAP": "\/index.md",
 		"oF": 1,
-		"oFM": 9,
+		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
 		"pME": 1,

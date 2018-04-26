@@ -35,9 +35,9 @@ window.addEventListener('load', AOS.refresh);
 
 $("a.link").hover(function() {
 	$this = $(this);
-  $("body").css("background-image", "url(" + $(this).data("bg") + ")");
+  $(".home__products").css("background-image", "url(" + $(this).data("bg") + ")");
 	}, function() {
-	$("body").css("background-image", '');
+	$(".home__products").css("background-image", '');
 });
 
 $(function() {

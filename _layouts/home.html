@@ -125,21 +125,20 @@ layout: default
 <!-- Products -->
 <section class="home__products">
 
-  <div class="grid-x padding-3">
+  <div class="grid-x padding-1">
       <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
         <h3 class="section__title">Bottles</h3>
       </div>
   </div>
 
-  <div class="grid-y align-center padding-3" style="min-height: 80vh;">
+  <div class="grid-y align-center padding-1" style="min-height: 80vh;">
     <div class="shrink cell">
     
     <div class="grid-x">
       {% for product in page.products %}
         <div class="cell small-12 text-uppercase" data-aos="fade-in">
-          <h1 class="home__products__title">{{product.title}}</h1>
-          
-<!--           <a href="{{product.link}}" class="link" data-bgcolor="{{product.color}}" data-bg="{{product.image}}">{{product.title}}</a> -->
+
+          <a href="{{product.link}}" class="link" data-bgcolor="{{product.color}}" data-bg="{{product.image}}"><h1 class="home__products__title">{{product.title}}</h1></a>
           
         </div>
       {% endfor %}
