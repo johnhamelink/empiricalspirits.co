@@ -29,6 +29,7 @@ products:
   volume: 70cl
   abv: 35%
   maturation: 
+  link: "https://shop.empiricalspirits.co"
 - title: Fallen Pony Blend
   image: "/uploads/sieves.jpg"
   botanicals: Quince Tea, Quince Tea Kombucha
@@ -38,6 +39,7 @@ products:
   volume: 70cl
   abv: 35%
   maturation: 
+  link: "https://shop.empiricalspirits.co"
 - title: Charlene McGee Blend
   image: "/uploads/sieves.jpg"
   botanicals: Smoked Juniper
@@ -47,6 +49,7 @@ products:
   volume: 70cl
   abv: 40%
   maturation: Oloroso Cask
+  link: "https://shop.empiricalspirits.co"
 - title: Anne Bonny Blend
   image: "/uploads/sieves.jpg"
   botanicals: Oyster, Gooseberry
@@ -56,6 +59,7 @@ products:
   volume: 70cl
   abv: 34%
   maturation: 
+  link: "https://shop.empiricalspirits.co"
 - title: Clarence & Alabama Blend
   image: "/uploads/sieves.jpg"
   botanicals: Lemon Verbena, Douglas Fir Kombucha
@@ -65,6 +69,7 @@ products:
   volume: 70cl
   abv: 33%
   maturation: 
+  link: "https://shop.empiricalspirits.co"
 stockists:
 - title: Contra
   link: https://www.google.com
