@@ -13,6 +13,7 @@ layout: compress
 
 <!-- Content -->
 {{content}}
+
 <!-- End Content -->
 
 <!-- Footer -->
@@ -28,6 +29,13 @@ layout: compress
 {% include analytics.html %}
 {% endif %}
 <!-- End Google Analytics -->
+
+<div id="preload">
+{% for image in page.products %}
+{% include images/portrait.html %}
+{% endfor %}
+</div>
+
 </body>
 
 </html>

@@ -106,38 +106,11 @@ layout: default
     
     
               {% if image.aspect == "square" %}
-              <img data-interchange=
-              "
-              [{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]
-              [{{ image.image | imgix_url: w: 1024, h: 1024, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, medium]
-              [{{ image.image | imgix_url: w: 1200, h: 1200, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, large]
-              [{{ image.image | imgix_url: w: 1440, h: 1440, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xlarge]
-              [{{ image.image | imgix_url: w: 1440, h: 1440, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xxlarge]
-              "
-              alt="{{ image.alt }}"
-              >
+              {% include images/square.html %}
               {% elsif image.aspect == "landscape" %}
-              <img data-interchange=
-              "
-              [{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]
-              [{{ image.image | imgix_url: w: 1024, h: 731, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, medium]
-              [{{ image.image | imgix_url: w: 1200, h: 857, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, large]
-              [{{ image.image | imgix_url: w: 1440, h: 1029, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xlarge]
-              [{{ image.image | imgix_url: w: 1440, h: 1029, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xxlarge]
-              "
-              alt="{{ image.alt }}"
-              >
+              {% include images/landscape.html %}
               {% elsif image.aspect == "portrait" %}
-              <img data-interchange=
-              "
-              [{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]
-              [{{ image.image | imgix_url: w: 1024, h: 1434, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, medium]
-              [{{ image.image | imgix_url: w: 1200, h: 1680, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, large]
-              [{{ image.image | imgix_url: w: 1440, h: 2016, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xlarge]
-              [{{ image.image | imgix_url: w: 1440, h: 2016, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xxlarge]
-              "
-              alt="{{ image.alt }}"
-              >
+              {% include images/portrait.html %}
               {% endif %}
               
               <div class="margin-top-1"><small>{{image.text}}</small></div>
@@ -165,6 +138,9 @@ layout: default
       {% for product in page.products %}
         <div class="cell small-12 text-uppercase" data-aos="fade-in">
           <h1 class="home__products__title">{{product.title}}</h1>
+          
+<!--           <a href="{{product.link}}" class="link" data-bgcolor="{{product.color}}" data-bg="{{product.image}}">{{product.title}}</a> -->
+          
         </div>
       {% endfor %}
     </div>

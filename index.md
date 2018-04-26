@@ -21,6 +21,7 @@ images:
   aspect: landscape
 products:
 - title: Easy Tiger
+  image: "/uploads/sieves.jpg"
   botanicals: Quince Tea, Kombucha
   grains: Naked Barley, Pearled Barley, Pilsner Malt
   koji: Aspergillus Oryzae
@@ -29,6 +30,7 @@ products:
   abv: 35%
   maturation: 
 - title: Fallen Pony Blend
+  image: "/uploads/sieves.jpg"
   botanicals: Quince Tea, Quince Tea Kombucha
   grains: Naked Barley, Pearled Barley, Pilsner Malt
   koji: Aspergillus Oryzae
@@ -37,6 +39,7 @@ products:
   abv: 35%
   maturation: 
 - title: Charlene McGee Blend
+  image: "/uploads/sieves.jpg"
   botanicals: Smoked Juniper
   grains: Naked Barley, Pearled Barley, Pilsner Malt
   koji: Aspergillus Oryzae
@@ -45,6 +48,7 @@ products:
   abv: 40%
   maturation: Oloroso Cask
 - title: Anne Bonny Blend
+  image: "/uploads/sieves.jpg"
   botanicals: Oyster, Gooseberry
   grains: Naked Barley, Pearled Barley, Pilsner Malt
   koji: Aspergillus Oryzae
@@ -53,6 +57,7 @@ products:
   abv: 34%
   maturation: 
 - title: Clarence & Alabama Blend
+  image: "/uploads/sieves.jpg"
   botanicals: Lemon Verbena, Douglas Fir Kombucha
   grains: Naked Barley, Pearled Barley, Pilsner Malt
   koji: Aspergillus Oryzae

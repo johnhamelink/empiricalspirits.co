@@ -1,0 +1,10 @@
+<img data-interchange=
+"
+[{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]
+[{{ image.image | imgix_url: w: 1024, h: 1024, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, medium]
+[{{ image.image | imgix_url: w: 1200, h: 1200, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, large]
+[{{ image.image | imgix_url: w: 1440, h: 1440, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xlarge]
+[{{ image.image | imgix_url: w: 1440, h: 1440, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xxlarge]
+"
+alt="{{ image.alt }}"
+>

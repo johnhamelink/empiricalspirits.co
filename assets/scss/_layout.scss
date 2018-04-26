@@ -126,8 +126,10 @@ i, cite, em, var, address, dfn {
 }
 
 .content {
+/*
 background: rgb(38,34,34);
 background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, rgba(38,34,34,1) 54%, rgba(28,111,97,1) 63%, rgba(23,127,109,1) 68%, rgba(18,136,117,1) 76%, rgba(64,44,37,1) 84%, rgba(38,34,34,1) 97%, rgba(38,34,34,1) 100%);
+*/
 }
 
 .home__hero {
@@ -220,4 +222,13 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
   margin-bottom: $global-margin;
   webkit-padding-after: 0;
   display: inline-block;
+}
+
+#preload {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px;
+  top: -9999px;
+  height: 1px;
+  width: 1px;
 }
