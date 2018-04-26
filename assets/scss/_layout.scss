@@ -178,7 +178,7 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
 }
 
 .home__products {
-  min-height: 100vh;
+//   min-height: 100vh;
 }
 .home__products__title {
    text-align: justify;
@@ -190,14 +190,34 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
    width: 100%;
    }
   &:hover {
-  color: $black;
+  color: transparent;
   -webkit-text-stroke: 2px $white;
   }
 }
 
 .home__stockist__title {
   &:hover {
-  color: $black;
+  color: transparent;
   -webkit-text-stroke: 2px $white;
   }
+}
+
+
+
+.masonry-css {
+  column-gap: $global-margin;
+  @include breakpoint(small) {
+    column-count:1;
+  }
+  @include breakpoint(medium) {
+    column-count:2;
+  }
+}
+
+.masonry-css-item {
+  column-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: $global-margin;
+  webkit-padding-after: 0;
+  display: inline-block;
 }

@@ -6,7 +6,7 @@ layout: default
 <section class="home__hero">
 
   
-  <div class="home__hero__navigation padding-3">
+  <div class="home__hero__navigation padding-1">
     {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
     <!-- Navigation -->
     <div class="grid-x grid-padding-x grid-padding-y align-justify">
@@ -96,27 +96,55 @@ layout: default
 
 <!-- Images -->
 <section class="home__images">
-    <div class="grid-x grid-padding-x grid-padding-y small-up-1 medium-up-2 large-up-3">
-      {% for image in page.images %}
-        <div class="cell" data-aos="fade-in">
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="small-12 cell">
+      
+        <div class="masonry-css">
+          {% for image in page.images %}
+            <div class="masonry-css-item" data-aos="fade-in">
+    
+    
+              {% if image.aspect == "square" %}
+              <img data-interchange=
+              "
+              [{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]
+              [{{ image.image | imgix_url: w: 1024, h: 1024, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, medium]
+              [{{ image.image | imgix_url: w: 1200, h: 1200, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, large]
+              [{{ image.image | imgix_url: w: 1440, h: 1440, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xlarge]
+              [{{ image.image | imgix_url: w: 1440, h: 1440, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xxlarge]
+              "
+              alt="{{ image.alt }}"
+              >
+              {% elsif image.aspect == "landscape" %}
+              <img data-interchange=
+              "
+              [{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]
+              [{{ image.image | imgix_url: w: 1024, h: 731, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, medium]
+              [{{ image.image | imgix_url: w: 1200, h: 857, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, large]
+              [{{ image.image | imgix_url: w: 1440, h: 1029, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xlarge]
+              [{{ image.image | imgix_url: w: 1440, h: 1029, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xxlarge]
+              "
+              alt="{{ image.alt }}"
+              >
+              {% elsif image.aspect == "portrait" %}
+              <img data-interchange=
+              "
+              [{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]
+              [{{ image.image | imgix_url: w: 1024, h: 1434, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, medium]
+              [{{ image.image | imgix_url: w: 1200, h: 1680, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, large]
+              [{{ image.image | imgix_url: w: 1440, h: 2016, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xlarge]
+              [{{ image.image | imgix_url: w: 1440, h: 2016, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xxlarge]
+              "
+              alt="{{ image.alt }}"
+              >
+              {% endif %}
+              
+              <div class="margin-top-1"><small>{{image.text}}</small></div>
+              
+            </div>
+          {% endfor %}
 
-<!--           <img data-interchange="[{{image.image | imgix_url: w: 500, q: 50}}, small], [{{image.image | imgix_url}}, medium], [{{image.image | imgix_url}}, large]" alt="{{ image.alt }}"> -->
-          
-          <img data-interchange=
-          "
-          [{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]
-          [{{ image.image | imgix_url: w: 640, h: 640, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, medium]
-          [{{ image.image | imgix_url: w: 1024, h: 1024, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, large]
-          [{{ image.image | imgix_url: w: 1200, h: 1200, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xlarge]
-          [{{ image.image | imgix_url: w: 1440, h: 1440, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, xxlarge]
-          "
-          alt="{{ image.alt }}"
-          >
-          
-          <div class="margin-top-1"><small>{{image.text}}</small></div>
-          
-        </div>
-      {% endfor %}
     </div>
 </section>
 <!-- End Images -->
