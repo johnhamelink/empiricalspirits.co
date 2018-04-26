@@ -69,6 +69,13 @@
 		"oAP": "\/_includes\/head.html",
 		"oF": 0
 		},
+	"\/_includes\/image.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_includes\/image.html",
+		"oF": 0
+		},
 	"\/_includes\/item.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -7888,6 +7895,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/Gemfile",
+		"oF": 0
+		},
+	"\/Gemfile.lock": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Gemfile.lock",
 		"oF": 0
 		},
 	"\/humans.txt": {

@@ -57,3 +57,4 @@ compress_html:
   - " -->"
   blanklines: true
   profile: false
+imgix: https://empirical-spirits.imgix.net
