@@ -113,7 +113,7 @@ stockists:
 - title: Bright
   link: https://www.brightrestaurant.co.uk
 - title: Sager + Wilde
-  link: https://www.sagerandwilde.com  
+  link: https://www.sagerandwilde.com
 layout: home
 ---
 
