@@ -41,6 +41,13 @@
 		"oAP": "\/_config.yml",
 		"oF": 0
 		},
+	"\/_data\/navigation-mobile.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_data\/navigation-mobile.yml",
+		"oF": 0
+		},
 	"\/_data\/navigation.yml": {
 		"cB": 0,
 		"ft": 8192,
@@ -104,32 +111,11 @@
 		"oAP": "\/_includes\/item.html",
 		"oF": 0
 		},
-	"\/_includes\/navigation--mobile.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_includes\/navigation--mobile.html",
-		"oF": 0
-		},
-	"\/_includes\/navigation.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_includes\/navigation.html",
-		"oF": 0
-		},
 	"\/_includes\/offcanvas.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/_includes\/offcanvas.html",
-		"oF": 0
-		},
-	"\/_includes\/overlay_menu.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_includes\/overlay_menu.html",
 		"oF": 0
 		},
 	"\/_includes\/scripts.html": {

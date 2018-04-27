@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://www.empiricalspirits.co/" />
 <meta property="og:site_name" content="Empirical Spirits" />
 <script type="application/ld+json">
-{"url":"https://www.empiricalspirits.co/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.empiricalspirits.co/assets/img/logo.svg"}},"description":"Empirical Spirits. A Copenhagen-based distillery and fermentation workshop. On a constant search for flavor.","name":"Empirical Spirits","headline":"Home","@type":"WebSite","@context":"http://schema.org"}</script>
+{"url":"https://www.empiricalspirits.co/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.empiricalspirits.co/assets/img/logo.svg"}},"headline":"Home","description":"Empirical Spirits. A Copenhagen-based distillery and fermentation workshop. On a constant search for flavor.","name":"Empirical Spirits","@type":"WebSite","@context":"http://schema.org"}</script>
   <title>Empirical Spirits</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -35,12 +35,12 @@
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
 <div class="grid-y align-center" style="height: 100%;">
   <div class="shrink cell">
-    <ul class="menu vertical align-center">
-      <li><a href="https://shop.empiricalspirits.co" class=""><h2>Buy</h2></a></li>
-      <li><a href="" class=""><h2>Bottles</h2></a></li>
-      <li><a href="/cocktails/" class=""><h2>Cocktails</h2></a></li>
-      <li><a href="" class=""><h2>Sign Up</h2></a></li>
-      <li><a href="mailto:someone@yoursite.com" class=""><h2>Contact</h2></a></li>
+    <ul class="menu vertical align-center text-uppercase">
+          <li><a href="https://shop.empiricalspirits.co" class="option" ><span>Buy<span></a></li>
+          <li><a href="#bottles" class="option" data-smooth-scroll><span>Bottles<span></a></li>
+          <li><a href="/cocktails/" class="option" ><span>Cocktails<span></a></li>
+          <li><a href="#newsletter" class="option" data-smooth-scroll><span>Sign Up<span></a></li>
+          <li><a href="mailto:someone@yoursite.com" class="option" ><span>Contact<span></a></li>
     </ul>
   </div>
 </div>
@@ -114,7 +114,11 @@
 "
 alt="Organic barley"
 >
-              <div class="width-50 margin-top-1"><small>Organic barley.</small></div>
+              <div class="grid-x grid-padding-y">
+                <div class="small-12 medium-8 large-6 cell">
+                  <small>Organic barley.</small>
+                </div>
+              </div>
             </div>
             <div class="masonry-css-item" data-aos="fade-in">
               <img data-interchange=
@@ -127,7 +131,11 @@ alt="Organic barley"
 "
 alt="Douglas Fir"
 >
-              <div class="width-50 margin-top-1"><small>Douglas fir. Picked north of Copenhagen.</small></div>
+              <div class="grid-x grid-padding-y">
+                <div class="small-12 medium-8 large-6 cell">
+                  <small>Douglas fir. Picked north of Copenhagen.</small>
+                </div>
+              </div>
             </div>
             <div class="masonry-css-item" data-aos="fade-in">
               <img data-interchange=
@@ -140,7 +148,11 @@ alt="Douglas Fir"
 "
 alt=""
 >
-              <div class="width-50 margin-top-1"><small>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</small></div>
+              <div class="grid-x grid-padding-y">
+                <div class="small-12 medium-8 large-6 cell">
+                  <small>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</small>
+                </div>
+              </div>
             </div>
             <div class="masonry-css-item" data-aos="fade-in">
               <img data-interchange=
@@ -153,7 +165,11 @@ alt=""
   "
   alt=""
 >
-              <div class="width-50 margin-top-1"><small>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</small></div>
+              <div class="grid-x grid-padding-y">
+                <div class="small-12 medium-8 large-6 cell">
+                  <small>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</small>
+                </div>
+              </div>
             </div>
             <div class="masonry-css-item" data-aos="fade-in">
               <img data-interchange=
@@ -166,7 +182,11 @@ alt=""
 "
 alt=""
 >
-              <div class="width-50 margin-top-1"><small>Our homemade vacuum still, Diessel. Operates at 10 degrees celcius.</small></div>
+              <div class="grid-x grid-padding-y">
+                <div class="small-12 medium-8 large-6 cell">
+                  <small>Our homemade vacuum still, Diessel. Operates at 10 degrees celcius.</small>
+                </div>
+              </div>
             </div>
     </div>
 </section>
@@ -176,73 +196,57 @@ alt=""
         <h5 class="section__title">Bottles</h3>
       </div>
   </div>
-  <div class="grid-x grid-padding-x padding-1">
-      <div class="cell small-12 medium-8 text-uppercase">
-        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/easy-tiger.jpg"><h1 class="home__products__title">Easy Tiger</h1></a>
-      </div>
-      <div class="cell small-12 medium-4 text-uppercase">
-        <div class="home__products__details">
-        <h5>Botanicals — Quince Tea, Kombucha</h5>
-        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
-        <h5>Grains — Aspergillus Oryzae</h5>
-        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
-        <h5>Volume — 70cl</h5>
-        <h5>ABV — 35%</h5>
+  <div class="grid-x grid-padding-x">
+    <div class="cell small-12 medium-8 text-uppercase">
+      <a href="https://shop.empiricalspirits.co" class="link" id="show_div-easy-tiger" data-bgcolor="#ff0000" data-bg="/uploads/easy-tiger.jpg"><h1 class="home__products__title">Easy Tiger</h1></a>
+      <a href="https://shop.empiricalspirits.co" class="link" id="show_div-fallen-pony-blend" data-bgcolor="#ff0000" data-bg="/uploads/fallen-pony.jpg"><h1 class="home__products__title">Fallen Pony Blend</h1></a>
+      <a href="https://shop.empiricalspirits.co" class="link" id="show_div-charlene-mcgee-blend" data-bgcolor="#ff0000" data-bg="/uploads/charlene-mcgee.jpg"><h1 class="home__products__title">Charlene McGee Blend</h1></a>
+      <a href="https://shop.empiricalspirits.co" class="link" id="show_div-anne-bonny-blend" data-bgcolor="#ff0000" data-bg="/uploads/anne-bonny.jpg"><h1 class="home__products__title">Anne Bonny Blend</h1></a>
+      <a href="https://shop.empiricalspirits.co" class="link" id="show_div-clarence-alabama-blend" data-bgcolor="#ff0000" data-bg="/uploads/clarence-alabama.jpg"><h1 class="home__products__title">Clarence & Alabama Blend</h1></a>
+    </div>
+    <div class="cell small-12 medium-4 text-uppercase">
+        <div class="product-details" id="product-details-easy-tiger" style="display: none;">
+        Botanicals — Quince Tea, Kombucha</br>
+        Grains — Naked Barley, Pearled Barley, Pilsner Malt</br>
+        Grains — Aspergillus Oryzae</br>
+        Yeast — Belgian Saison 2 WLP 566</br>
+        Volume — 70cl</br>
+        ABV — 35%</br>
         </div>
-      </div>
-      <div class="cell small-12 medium-8 text-uppercase">
-        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/fallen-pony.jpg"><h1 class="home__products__title">Fallen Pony Blend</h1></a>
-      </div>
-      <div class="cell small-12 medium-4 text-uppercase">
-        <div class="home__products__details">
-        <h5>Botanicals — Quince Tea, Quince Tea Kombucha</h5>
-        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
-        <h5>Grains — Aspergillus Oryzae</h5>
-        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
-        <h5>Volume — 70cl</h5>
-        <h5>ABV — 35%</h5>
+        <div class="product-details" id="product-details-fallen-pony-blend" style="display: none;">
+        Botanicals — Quince Tea, Quince Tea Kombucha</br>
+        Grains — Naked Barley, Pearled Barley, Pilsner Malt</br>
+        Grains — Aspergillus Oryzae</br>
+        Yeast — Belgian Saison 2 WLP 566</br>
+        Volume — 70cl</br>
+        ABV — 35%</br>
         </div>
-      </div>
-      <div class="cell small-12 medium-8 text-uppercase">
-        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/charlene-mcgee.jpg"><h1 class="home__products__title">Charlene McGee Blend</h1></a>
-      </div>
-      <div class="cell small-12 medium-4 text-uppercase">
-        <div class="home__products__details">
-        <h5>Botanicals — Smoked Juniper</h5>
-        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
-        <h5>Grains — Aspergillus Oryzae</h5>
-        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
-        <h5>Maturation – Oloroso Cask</h5>
-        <h5>Volume — 70cl</h5>
-        <h5>ABV — 40%</h5>
+        <div class="product-details" id="product-details-charlene-mcgee-blend" style="display: none;">
+        Botanicals — Smoked Juniper</br>
+        Grains — Naked Barley, Pearled Barley, Pilsner Malt</br>
+        Grains — Aspergillus Oryzae</br>
+        Yeast — Belgian Saison 2 WLP 566</br>
+        Maturation – Oloroso Cask</br>
+        Volume — 70cl</br>
+        ABV — 40%</br>
         </div>
-      </div>
-      <div class="cell small-12 medium-8 text-uppercase">
-        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/anne-bonny.jpg"><h1 class="home__products__title">Anne Bonny Blend</h1></a>
-      </div>
-      <div class="cell small-12 medium-4 text-uppercase">
-        <div class="home__products__details">
-        <h5>Botanicals — Oyster, Gooseberry</h5>
-        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
-        <h5>Grains — Aspergillus Oryzae</h5>
-        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
-        <h5>Volume — 70cl</h5>
-        <h5>ABV — 34%</h5>
+        <div class="product-details" id="product-details-anne-bonny-blend" style="display: none;">
+        Botanicals — Oyster, Gooseberry</br>
+        Grains — Naked Barley, Pearled Barley, Pilsner Malt</br>
+        Grains — Aspergillus Oryzae</br>
+        Yeast — Belgian Saison 2 WLP 566</br>
+        Volume — 70cl</br>
+        ABV — 34%</br>
         </div>
-      </div>
-      <div class="cell small-12 medium-8 text-uppercase">
-        <a href="https://shop.empiricalspirits.co" class="link" data-bgcolor="#ff0000" data-bg="/uploads/clarence-alabama.jpg"><h1 class="home__products__title">Clarence & Alabama Blend</h1></a>
-      </div>
-      <div class="cell small-12 medium-4 text-uppercase">
-        <div class="home__products__details">
-        <h5>Botanicals — Lemon Verbena, Douglas Fir Kombucha</h5>
-        <h5>Grains — Naked Barley, Pearled Barley, Pilsner Malt</h5>
-        <h5>Grains — Aspergillus Oryzae</h5>
-        <h5>Yeast — Belgian Saison 2 WLP 566</h5>
-        <h5>Volume — 70cl</h5>
-        <h5>ABV — 33%</h5>
+        <div class="product-details" id="product-details-clarence-alabama-blend" style="display: none;">
+        Botanicals — Lemon Verbena, Douglas Fir Kombucha</br>
+        Grains — Naked Barley, Pearled Barley, Pilsner Malt</br>
+        Grains — Aspergillus Oryzae</br>
+        Yeast — Belgian Saison 2 WLP 566</br>
+        Volume — 70cl</br>
+        ABV — 33%</br>
         </div>
-      </div>
+    </div>
   </div>
 </section>
 <section class="home__stockists">
@@ -251,42 +255,57 @@ alt=""
         <h5 class="section__title">Stockists</h3>
       </div>
   </div>
-  <div class="grid-x padding-1">
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
+  <div class="grid-x padding-1 home__stockists__list">
+      <div class="cell small-12 text-uppercase text-center">
         <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Contra</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Clove Club</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://thecloveclub.com" target="_blank"><h1 class="home__stockist__title">Clove Club</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Bar Trench</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="http://small-axe.net/bar-trench/" target="_blank"><h1 class="home__stockist__title">Bar Trench</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Eleven Madison</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://www.elevenmadisonpark.com" target="_blank"><h1 class="home__stockist__title">Eleven Madison</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Wild Air</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="http://wildair.nyc" target="_blank"><h1 class="home__stockist__title">Wild Air</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Nomad</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="http://www.lyancub.com" target="_blank"><h1 class="home__stockist__title">Cub</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Sager + Wild</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://108.dk" target="_blank"><h1 class="home__stockist__title">108</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Cub</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://www.noblefineliquor.co.uk" target="_blank"><h1 class="home__stockist__title">Noble Fine Liquor</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">108</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="http://amassrestaurant.com" target="_blank"><h1 class="home__stockist__title">Amass</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Henrys' Wild</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://www.missionchinesefood.com" target="_blank"><h1 class="home__stockist__title">Mission Chinese Food</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Noble Fine Liquor</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://www.ernstberlin.de" target="_blank"><h1 class="home__stockist__title">Ernst</h1></a>
       </div>
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="https://www.google.com" target="_blank"><h1 class="home__stockist__title">Amass</h1></a>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="http://www.denvandrette.dk" target="_blank"><h1 class="home__stockist__title">Den Vandrette</h1></a>
+      </div>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://maaemo.no" target="_blank"><h1 class="home__stockist__title">Maaemo</h1></a>
+      </div>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="http://himmeriget.dk" target="_blank"><h1 class="home__stockist__title">Himmeriget</h1></a>
+      </div>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="http://slurpramen.dk" target="_blank"><h1 class="home__stockist__title">Slurp</h1></a>
+      </div>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://www.brightrestaurant.co.uk" target="_blank"><h1 class="home__stockist__title">Bright</h1></a>
+      </div>
+      <div class="cell small-12 text-uppercase text-center">
+        <a href="https://www.sagerandwilde.com" target="_blank"><h1 class="home__stockist__title">Sager + Wilde</h1></a>
       </div>
   </div>
 </section>
@@ -315,8 +334,8 @@ alt=""
 <div class="grid-x padding-1 align-justify footer">
   <div class="shrink cell">
     <ul class="menu simple">
-      <li><a href="https://www.instagram.com/" target="_blank">IN</a></li>
-      <li><a href="https://www.twitter.com/" target="_blank">TW</a></li>
+      <li><a href="https://www.instagram.com/empiricalcph/" target="_blank">IN</a></li>
+      <li><a href="https://www.facebook.com/empiricalcph" target="_blank">FB</a></li>
     </ul>
   </div>
   <div class="shrink cell slide-in-down">
@@ -325,6 +344,33 @@ alt=""
 </div>
 <script src="/assets/js/min/app-min.js"></script>
 <script defer src="/assets/js/min/svgxuse-min.js"></script>
+<script>
+$('#show_div-easy-tiger').hover(function() { 
+    $('#product-details-easy-tiger').show(); 
+}, function() { 
+    $('#product-details-easy-tiger').hide(); 
+});
+$('#show_div-fallen-pony-blend').hover(function() { 
+    $('#product-details-fallen-pony-blend').show(); 
+}, function() { 
+    $('#product-details-fallen-pony-blend').hide(); 
+});
+$('#show_div-charlene-mcgee-blend').hover(function() { 
+    $('#product-details-charlene-mcgee-blend').show(); 
+}, function() { 
+    $('#product-details-charlene-mcgee-blend').hide(); 
+});
+$('#show_div-anne-bonny-blend').hover(function() { 
+    $('#product-details-anne-bonny-blend').show(); 
+}, function() { 
+    $('#product-details-anne-bonny-blend').hide(); 
+});
+$('#show_div-clarence-alabama-blend').hover(function() { 
+    $('#product-details-clarence-alabama-blend').show(); 
+}, function() { 
+    $('#product-details-clarence-alabama-blend').hide(); 
+});
+</script>
 <div id="preload">
 <img data-interchange=
   "

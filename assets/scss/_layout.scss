@@ -273,10 +273,12 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
   transition: 0s;
 }
 
-.home__products__details {
-  display: none
-}
-
 .navigation {
   z-index: 14;
+}
+
+.home__stockists__list {
+  height: 500px;
+  overflow: scroll;
+  
 }

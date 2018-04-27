@@ -83,27 +83,37 @@ stockists:
 - title: Contra
   link: https://www.google.com
 - title: Clove Club
-  link: https://www.google.com
+  link: https://thecloveclub.com
 - title: Bar Trench
-  link: https://www.google.com
+  link: http://small-axe.net/bar-trench/
 - title: Eleven Madison
-  link: https://www.google.com
+  link: https://www.elevenmadisonpark.com
 - title: Wild Air
-  link: https://www.google.com
-- title: Nomad
-  link: https://www.google.com
-- title: Sager + Wild
-  link: https://www.google.com
+  link: http://wildair.nyc
 - title: Cub
-  link: https://www.google.com
+  link: http://www.lyancub.com
 - title: 108
-  link: https://www.google.com
-- title: Henrys' Wild
-  link: https://www.google.com
+  link: https://108.dk
 - title: Noble Fine Liquor
-  link: https://www.google.com
+  link: https://www.noblefineliquor.co.uk
 - title: Amass
-  link: https://www.google.com
+  link: http://amassrestaurant.com
+- title: Mission Chinese Food
+  link: https://www.missionchinesefood.com
+- title: Ernst
+  link: https://www.ernstberlin.de
+- title: Den Vandrette
+  link: http://www.denvandrette.dk
+- title: Maaemo
+  link: https://maaemo.no
+- title: Himmeriget
+  link: http://himmeriget.dk
+- title: Slurp
+  link: http://slurpramen.dk
+- title: Bright
+  link: https://www.brightrestaurant.co.uk
+- title: Sager + Wilde
+  link: https://www.sagerandwilde.com  
 layout: home
 ---
 

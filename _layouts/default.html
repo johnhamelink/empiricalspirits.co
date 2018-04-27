@@ -20,7 +20,6 @@ layout: compress
 <div class="off-canvas-content {{page.layout | slugify}}" data-off-canvas-content>
 <!-- Content -->
 {{content}}
-
 <!-- End Content -->
 
 <!-- Footer -->
@@ -31,6 +30,16 @@ layout: compress
 <!-- Scripts -->
 {% include scripts.html %}
 <!-- End Scripts -->
+
+<script>
+{% for product in page.products %}
+$('#show_div-{{product.title | slugify}}').hover(function() { 
+    $('#product-details-{{product.title | slugify}}').show(); 
+}, function() { 
+    $('#product-details-{{product.title | slugify}}').hide(); 
+});
+{% endfor %}
+</script>
 
 <!-- Google Analytics -->
 {% if site.analytics %}
