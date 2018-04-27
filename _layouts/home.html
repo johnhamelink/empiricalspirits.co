@@ -4,16 +4,15 @@ layout: default
 
 <!-- Hero -->
 <section class="home__hero">
-
   
   <div class="home__hero__navigation padding-1">
     {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
     <!-- Navigation -->
     <div class="grid-x grid-padding-x grid-padding-y align-justify">
       
-      <div class="auto cell navigation__logo">
+      <div class="auto cell navigation navigation__logo">
         <ul class="menu simple align-bottom">
-            <li><img src="/assets/icons/plate-icon.png" class="navigation__logo__image"></li>
+            <li><img src="/assets/icons/plate-icon.png"></li>
         </ul>
       </div>
       
@@ -36,7 +35,7 @@ layout: default
           </ul>
           </li>
           {% else %}
-          <li{{ current }}><a href="{% if entry.url %}{{ entry.url }}{% elsif entry.id %}{{ entry.id }}{% endif %}" class="option" {% if entry.id %}data-smooth-scroll{% endif %}><span>{{ entry.title }}<span></a></li>
+          <li{{ current }}><a href="{% if entry.url %}{{ entry.url }}{% elsif entry.id %}{{ entry.id }}{% endif %}" class="navigation__menu__item" {% if entry.id %}data-smooth-scroll{% endif %}><span>{{ entry.title }}<span></a></li>
           {% endif %}
           {% endfor %}
         </ul>
@@ -52,39 +51,35 @@ layout: default
     <!-- End Navigation -->
   </div>
   
-
   <div class="home__hero__video">
     <video src="assets/videos/hero.mp4" autoplay muted playsinline loop></video>   
   </div>
   
-  
-  <div class="home__hero__logo">
+  <div class="home__hero__logo rellax">
     <div class="grid-y align-center" style="height: 100%;">
       <div class="cell shrink">
         <img src="/assets/img/logo-split.svg" class="home__hero__logo__split">
       </div>
     </div>
   </div>
-
   
 </section>
 <!-- End Hero -->
-
-<section class="content">
+  
 <!-- Introduction -->
-<section class="home__introduction margin-bottom-3" style="margin-top: -8rem;">
+<section class="home__introduction padding-top-2 padding-bottom-2" style="margin-top: -10rem;">
   
   <div class="grid-container">
     <div class="grid-x margin-bottom-2">
         <div class="small-12 medium-12 cell text-uppercase" data-aos="fade-in">
-          <h2 class="home__products__title">Empirical Spirits is about swerving the categories</h2>
+          <h2>Empirical Spirits is about swerving the categories</h2>
         </div>
     </div>
   </div>
   
   <div class="grid-container">
     <div class="grid-x">
-        <div class="small-12 medium-10 cell" data-aos="fade-in">
+        <div class="small-12 medium-10 cell" data-aos="fade-up">
           <h3>Choosing heirloom grains, koji and bespoke yeasts to ferment in-house, our one-off spirits reflect the time and place they came from: a product made in spring might taste different to one made in the fall. To help us highlight those differences, we have designed and built equipment that allows us to distill at 10°C, rather than boiling all the flavour away</h3>
         </div>
     </div>
@@ -93,16 +88,14 @@ layout: default
 <!-- End Introduction -->
 
 <!-- Images -->
-<section class="home__images">
+<section class="home__images padding-top-2 padding-bottom-2">
   <div class="grid-container">
     <div class="grid-x">
       <div class="small-12 cell">
       
-        <div class="masonry-css">
+        <div class="home__images__masonry">
           {% for image in page.images %}
-            <div class="masonry-css-item" data-aos="fade-in">
-    
-    
+            <div class="home__images__masonry__item" data-aos="fade-{{image.animation}}">
               {% if image.aspect == "square" %}
               {% include images/square.html %}
               {% elsif image.aspect == "landscape" %}
@@ -110,71 +103,86 @@ layout: default
               {% elsif image.aspect == "portrait" %}
               {% include images/portrait.html %}
               {% endif %}
-              
-              <div class="width-50 margin-top-1"><small>{{image.text}}</small></div>
-              
+              <div class="grid-x grid-padding-y {% if image.text-align%}align-{{image.text-align}}{% endif %}">
+                <div class="small-12 medium-8 large-6 cell small-text-left {% if image.text-align%}medium-text-{{image.text-align}}{% endif %}">
+                  <small>{{image.text}}</small>
+                </div>
+              </div>
             </div>
           {% endfor %}
-
+        </div>
+      </div>
     </div>
 </section>
 <!-- End Images -->
 
+
+
 <!-- Products -->
-<section class="home__products" id="bottles">
+<section class="home__products padding-top-2 padding-bottom-2" id="bottles">
+  
+  <div class="grid-y align-center home__products__inner" style="height: 100%">
+    <div class="shrink cell">
 
-  <div class="grid-x padding-1">
-      <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
-        <h5 class="section__title">Bottles</h3>
-      </div>
-  </div>
-
-    
-  <div class="grid-x grid-padding-x padding-1">
-    {% for product in page.products %}
+    <div class="grid-x grid-padding-y">
+        <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
+          <h5 class="section__title">Bottles</h3>
+        </div>
+    </div>
+      
+    <div class="grid-x grid-padding-x grid-padding-y">
+      
       <div class="cell small-12 medium-8 text-uppercase">
-
-        <a href="{{product.link}}" class="link" data-bgcolor="{{product.color}}" data-bg="{{product.image}}"><h1 class="home__products__title">{{product.title}}</h1></a>
-        
+      {% for product in page.products %}
+        <a href="{{product.link}}" class="link" id="show_div-{{product.title | slugify}}" data-bgcolor="{{product.color}}" data-bg="{{product.image}}"><h1 class="home__products__title" data-aos="fade-in">{{product.title}}</h1></a>
+      {% endfor %}
       </div>
       
-      <div class="cell small-12 medium-4 text-uppercase">
-        
-        <div class="home__products__details">
-        <h5>Botanicals — {{product.botanicals}}</h5>
-        <h5>Grains — {{product.grains}}</h5>
-        <h5>Grains — {{product.koji}}</h5>
-        <h5>Yeast — {{product.yeast}}</h5>
-        {% if product.maturation %}<h5>Maturation – {{product.maturation}}</h5>{% endif %}
-        <h5>Volume — {{product.volume}}</h5>
-        <h5>ABV — {{product.abv}}</h5>
-        </div>
-
+      <div class="cell small-12 medium-4 text-uppercase hide-for-small-only">
+      {% for product in page.products %}
+          <div class="product-details" id="product-details-{{product.title | slugify}}" style="display: none;">
+          Botanicals — {{product.botanicals}}</br>
+          Grains — {{product.grains}}</br>
+          Grains — {{product.koji}}</br>
+          Yeast — {{product.yeast}}</br>
+          {% if product.maturation %}Maturation – {{product.maturation}}</br>{% endif %}
+          Volume — {{product.volume}}</br>
+          ABV — {{product.abv}}</br>
+          </div>
+      {% endfor %}
       </div>
-    {% endfor %}
+      
+    </div>
+    
+    </div>
   </div>
 
-    
 </section>
 <!-- End Products -->
 
 
 <!-- Stockists -->
-<section class="home__stockists">
-
-  <div class="grid-x padding-1">
-      <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
-        <h5 class="section__title">Stockists</h3>
-      </div>
-  </div>
-
+<section class="home__stockists padding-top-2 padding-bottom-2">
   
-  <div class="grid-x padding-1">
-    {% for stockist in page.stockists %}
-      <div class="cell small-12 text-uppercase text-center" data-aos="fade-in">
-        <a href="{{ stockist.link}}" target="_blank"><h1 class="home__stockist__title">{{stockist.title}}</h1></a>
-      </div>
-    {% endfor %}
+  <div class="grid-y align-center" style="height: 100%">
+    <div class="shrink cell">
+
+    <div class="grid-x padding-top-1 padding-bottom-1">
+        <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
+          <h5 class="section__title">Stockists</h3>
+        </div>
+    </div>
+  
+    
+    <div class="grid-x padding-1 home__stockists__list">
+      {% for stockist in page.stockists %}
+        <div class="cell small-12 text-uppercase text-center">
+          <a href="{{ stockist.link}}" target="_blank"><h1 class="home__stockist__title">{{stockist.title}}</h1></a>
+        </div>
+      {% endfor %}
+    </div>
+  
+    </div>
   </div>
     
 </section>
@@ -182,33 +190,37 @@ layout: default
 
 <!-- Newsletter -->
 <section class="home__newsletter padding-top-3 padding-bottom-3" id="newsletter">
+  
+  <div class="grid-y align-center" style="height: 100%">
+    <div class="shrink cell">
 
-  <div class="grid-x padding-top-1 padding-bottom-1">
-      <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
-        <h5 class="section__title">Newsletter</h3>
+      <div class="grid-x padding-top-3 padding-bottom-3">
+        <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
+          <h5 class="section__title">Newsletter</h3>
+        </div>
       </div>
-  </div>
 
   
-  <div class="grid-x padding-top-1 padding-bottom-1 align-center">
+      <div class="grid-x padding-top-2 padding-bottom-2 align-center">
+        <div class="small-12 medium-6 cell" data-aos="fade-in">
+        <form action="" method="post" class="validate" target="_blank" novalidate="">
           
-          <div class="small-12 medium-6 cell" data-aos="fade-in">
-          <form action="" method="post" class="validate" target="_blank" novalidate="">
+          <div class="input-group">
+            <input class="input-group-field" type="email" value="" name="EMAIL" placeholder="Email">
             
-            <div class="input-group">
-              <input class="input-group-field" type="email" value="" name="EMAIL" placeholder="Email">
-              
-              <div class="input-group-button">
-                <button type="submit" class="button postfix hollow" name="subscribe" value="Subscribe">
-                  Yes
-                </button>
-              </div>
+            <div class="input-group-button">
+              <button type="submit" class="button postfix hollow" name="subscribe" value="Subscribe">
+                Yes
+              </button>
             </div>
-            
-          </form>
           </div>
+          
+        </form>
+        </div>
+      </div>
+      
+    </div>
   </div>
     
-</section>
 </section>
 <!-- End Newsletter -->

@@ -31,17 +31,26 @@ window.addEventListener('load', AOS.refresh);
 });
 
 // 4. Background
-// ----------------
+// -------------
 
 $("a.link").hover(function() {
 	$this = $(this);
-  $(".home__products").css("background-image", "url(" + $(this).data("bg") + ")");
+  $(".home__products__inner").css("background-image", "url(" + $(this).data("bg") + ")");
 	}, function() {
-	$(".home__products").css("background-image", '');
+	$(".home__products__inner").css("background-image", '');
+});
+
+// 5. Rellax
+// -------------
+
+$(function() {
+var rellax = new Rellax('.rellax');
 });
 
 /*
 $(function() {
-var rellax = new Rellax('.rellax');
+  $.scrollify({
+    section : ".example-classname",
+  });
 });
 */

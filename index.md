@@ -6,23 +6,28 @@ images:
   text: Organic barley.
   alt: Organic barley
   aspect: landscape
-  text-align: left
+  text-align: right
+  animation: up
 - image: "/uploads/douglas-fir-02.jpg"
   text: Douglas fir. Picked north of Copenhagen.
   alt: Douglas Fir
   aspect: square
-  text-align: left
+  text-align: right
+  animation: up
 - image: "/uploads/room.jpg"
   text: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
   aspect: square
-  text-align: left
+  text-align: right
+  animation: up
 - image: "/uploads/sieves.jpg"
   text: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
   aspect: portrait
+  animation: up
 - image: "/uploads/vacuum.jpg"
   text: Our homemade vacuum still, Diessel. Operates at 10 degrees celcius.
   aspect: landscape
-  text-align: right
+  text-align: left
+  animation: up
 products:
 - title: Easy Tiger
   image: "/uploads/easy-tiger.jpg"
@@ -58,7 +63,7 @@ products:
   link: https://shop.empiricalspirits.co
   color: "#ff0000"
 - title: Anne Bonny Blend
-  image: "/uploads/anne-bonny.jpg"
+  image: "/uploads/anne-bonny-blend.jpg"
   botanicals: Oyster, Gooseberry
   grains: Naked Barley, Pearled Barley, Pilsner Malt
   koji: Aspergillus Oryzae
@@ -83,27 +88,37 @@ stockists:
 - title: Contra
   link: https://www.google.com
 - title: Clove Club
-  link: https://www.google.com
+  link: https://thecloveclub.com
 - title: Bar Trench
-  link: https://www.google.com
+  link: http://small-axe.net/bar-trench/
 - title: Eleven Madison
-  link: https://www.google.com
+  link: https://www.elevenmadisonpark.com
 - title: Wild Air
-  link: https://www.google.com
-- title: Nomad
-  link: https://www.google.com
-- title: Sager + Wild
-  link: https://www.google.com
+  link: http://wildair.nyc
 - title: Cub
-  link: https://www.google.com
+  link: http://www.lyancub.com
 - title: 108
-  link: https://www.google.com
-- title: Henrys' Wild
-  link: https://www.google.com
+  link: https://108.dk
 - title: Noble Fine Liquor
-  link: https://www.google.com
+  link: https://www.noblefineliquor.co.uk
 - title: Amass
-  link: https://www.google.com
+  link: http://amassrestaurant.com
+- title: Mission Chinese Food
+  link: https://www.missionchinesefood.com
+- title: Ernst
+  link: https://www.ernstberlin.de
+- title: Den Vandrette
+  link: http://www.denvandrette.dk
+- title: Maaemo
+  link: https://maaemo.no
+- title: Himmeriget
+  link: http://himmeriget.dk
+- title: Slurp
+  link: http://slurpramen.dk
+- title: Bright
+  link: https://www.brightrestaurant.co.uk
+- title: Sager + Wilde
+  link: https://www.sagerandwilde.com
 layout: home
 ---
 
