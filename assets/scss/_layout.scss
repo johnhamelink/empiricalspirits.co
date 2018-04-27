@@ -3,9 +3,8 @@
 //   1. Mixins
 //   2. Global
 //   3. Typography
-//   4. Buttons
-//   4. Navigation
-//   5. Sections
+//   4. Loader
+//   5. Navigation
 //   6. Section One
 //   7. Section Two
 //   8. Section Three
@@ -48,6 +47,23 @@ svg {
   outline: 0;
 }
 
+/*
+::-webkit-scrollbar { 
+  display: none; 
+}
+*/
+
+.content {
+/*
+background: rgb(38,34,34);
+background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, rgba(38,34,34,1) 54%, rgba(28,111,97,1) 63%, rgba(23,127,109,1) 68%, rgba(18,136,117,1) 76%, rgba(64,44,37,1) 84%, rgba(38,34,34,1) 97%, rgba(38,34,34,1) 100%);
+*/
+}
+
+.section__title {
+  letter-spacing: $letter-spacing--loose;
+  text-indent: $letter-spacing--loose;
+}
 
 
 // 3. Typography
@@ -58,13 +74,13 @@ i, cite, em, var, address, dfn {
 }
 
 
-// 5. Loading
+// 4. Loader
 // ------
 
 .loader {
-  z-index: 3;
+  z-index: 15;
   position: fixed;
-  background: $white;
+  background: $black;
   top: 0;
   left: 0;
   height: 100%;
@@ -79,70 +95,83 @@ i, cite, em, var, address, dfn {
 }
 
 
-// 6. Navigation
-// ------
+// 5. Navigation
+// -------------
 
 .navigation__logo {
   z-index: 2;
 }
 
-.navigation__logo__image {
+.navigation__logo img {
   width: 4rem;
   height: auto;
-}
-
-.navigation__job {
-  z-index: 2;
-}
-
-.navigation__job {
-  color: $secondary-color;
 }
 
 .navigation__menu {
   z-index: 2;
 }
 
-.navigation--mobile {
-  z-index: 1;
-  position: fixed;
-  background: $white;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%; 
-  opacity: 0;
-  transition: $primary-transition;
-  visibility: hidden;
-  font-family: $header-font-family;
-  font-size: 1.25rem;
-  &.open {
-    opacity: 1;
-    visibility: visible;
-  }
-  a {
-   padding: 1rem 0rem;
-  }
+.navigation {
+  z-index: 14;
 }
 
-.content {
-background: rgb(38,34,34);
-background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, rgba(38,34,34,1) 54%, rgba(28,111,97,1) 63%, rgba(23,127,109,1) 68%, rgba(18,136,117,1) 76%, rgba(64,44,37,1) 84%, rgba(38,34,34,1) 97%, rgba(38,34,34,1) 100%);
+.navigation__menu__item span {
+  position: relative;
+  display: inline-block;
 }
+.navigation__menu__item span::after,
+.navigation__menu__item span::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: red;
+}
+.navigation__menu__item span::before {
+  left: -2.5px;
+}
+.navigation__menu__item span::after {
+  right: 2.5px;
+  background: $white;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.navigation__menu__item:hover span:before {
+  background: $white;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.navigation__menu__item:hover span:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+
+// 5. Hero
+// -------
+
 
 .home__hero {
   position: relative;
   height: 100vh;
 }
 
+.home__hero__logo__split {
+  width: 100%;
+  height: auto;
+}
+
 .home__hero__video {
   width: 100%;
   height: 100%;
-  video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
+}
+
+.home__hero__video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .home__hero__navigation {
@@ -153,50 +182,89 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
 }
 
 .home__hero__logo {
-  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  margin-top: -1rem;
 }
 
-.home__hero__logo__one {
-  margin-right: -25rem;
+// 5. Introduction
+// ---------------
+
+.home__introduction h2 {
+  text-align: justify;
+  text-align-last: justify;
+  line-height: 0.95;
+  &:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  }
 }
 
-.home__hero__logo__two {
-  margin-left: -35rem;
+// 5. Images
+// ---------
+
+.home__images__masonry {
+  column-gap: 3rem;
+  @include breakpoint(small) {
+    column-count:1;
+  }
+  @include breakpoint(medium) {
+    column-count:2;
+  }
 }
 
-.home__hero__logo__three {
-  margin-right: -15rem;
+.home__images__masonry__item {
+  column-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  webkit-padding-after: 0;
+  display: inline-block;
 }
 
-.section__title {
-  letter-spacing: $letter-spacing--loose;
-}
+
+// 5. Products
+// -----------
 
 .home__products {
+  height: 100vh;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-position: 50% 50%; 
   background-size: auto 75%;
+  background: rgb(38,34,34);
+  background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, rgba(38,34,34,1) 54%, rgba(28,111,97,1) 63%, rgba(23,127,109,1) 68%, rgba(18,136,117,1) 76%, rgba(64,44,37,1) 84%, rgba(38,34,34,1) 97%, rgba(38,34,34,1) 100%);
 }
 
 .home__products__title {
-   text-align: justify;
-   text-align-last: justify;
-   line-height: 0.95;
-   &:after {
-   content: "";
-   display: inline-block;
-   width: 100%;
-   }
-  &:hover {
-  color: transparent;
-  -webkit-text-stroke: 2px $white;
+  text-align: justify;
+  text-align-last: justify;
+  line-height: 0.95;
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
   }
+  &:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px $white;
+  }
+}
+
+// 5. Stockists
+// ------------
+
+.home__stockists__list {
+  @include breakpoint(small) {
+  height: auto;
+  }
+  @include breakpoint(medium) {
+  height: 50vh;
+  }
+  overflow: scroll;
 }
 
 .home__stockist__title {
@@ -206,28 +274,8 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
   }
 }
 
-.home__hero__logo__split {
-  width: 100%;
-  height: auto;
-}
-
-
-.masonry-css {
-  column-gap: 2rem;
-  @include breakpoint(small) {
-    column-count:1;
-  }
-  @include breakpoint(medium) {
-    column-count:2;
-  }
-}
-
-.masonry-css-item {
-  column-break-inside: avoid;
-  break-inside: avoid;
-  margin-bottom: 2rem;
-  webkit-padding-after: 0;
-  display: inline-block;
+.home__newsletter {
+  height: 100vh;
 }
 
 #preload {
@@ -237,48 +285,4 @@ background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, r
   top: -9999px;
   height: 1px;
   width: 1px;
-}
-
-
-.option span {
-  position: relative;
-  display: inline-block;
-}
-.option span::after,
-.option span::before {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  top: 50%;
-  margin-top: -0.5px;
-  background: red;
-}
-.option span::before {
-  left: -2.5px;
-}
-.option span::after {
-  right: 2.5px;
-  background: $white;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-.option:hover span:before {
-  background: $white;
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-.option:hover span:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
-}
-
-.navigation {
-  z-index: 14;
-}
-
-.home__stockists__list {
-  height: 500px;
-  overflow: scroll;
-  
 }

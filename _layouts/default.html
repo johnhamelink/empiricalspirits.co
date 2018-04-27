@@ -11,6 +11,18 @@ layout: compress
 
 <body>
 
+{% if page.layout == "home" %}
+<div class="grid-y align-center loader">
+  <div class="shrink cell">
+    <div class="grid-x grid-padding-x align-center">
+    	<div class="shrink cell text-uppercase" data-aos="fade-up">
+    		<h1>{{site.title}}</h1>
+    	</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 <!-- Off Canvas Navigation -->
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
 {% include offcanvas.html %}
@@ -34,9 +46,9 @@ layout: compress
 <script>
 {% for product in page.products %}
 $('#show_div-{{product.title | slugify}}').hover(function() { 
-    $('#product-details-{{product.title | slugify}}').show(); 
-}, function() { 
-    $('#product-details-{{product.title | slugify}}').hide(); 
+  $('#product-details-{{product.title | slugify}}').show(); 
+  }, function() { 
+  $('#product-details-{{product.title | slugify}}').hide(); 
 });
 {% endfor %}
 </script>
