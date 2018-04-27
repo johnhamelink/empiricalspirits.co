@@ -230,13 +230,18 @@ i, cite, em, var, address, dfn {
 // -----------
 
 .home__products {
-  height: 100vh;
-  background-position: 50% 50%;
+  @include breakpoint(small) {
+  height: auto
+  }
+  @include breakpoint(medium) {
+  height: 100vh
+  }
+ }
+
+.home__products__inner {
   background-repeat: no-repeat;
   background-position: 50% 50%; 
   background-size: auto 75%;
-  background: rgb(38,34,34);
-  background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, rgba(38,34,34,1) 54%, rgba(28,111,97,1) 63%, rgba(23,127,109,1) 68%, rgba(18,136,117,1) 76%, rgba(64,44,37,1) 84%, rgba(38,34,34,1) 97%, rgba(38,34,34,1) 100%);
 }
 
 .home__products__title {
@@ -257,12 +262,21 @@ i, cite, em, var, address, dfn {
 // 5. Stockists
 // ------------
 
+.home__stockists {
+  @include breakpoint(small) {
+  height: auto
+  }
+  @include breakpoint(medium) {
+  height: 100vh
+  }
+}
+
 .home__stockists__list {
   @include breakpoint(small) {
   height: auto;
   }
   @include breakpoint(medium) {
-  height: 50vh;
+  height: 75vh;
   }
   overflow: scroll;
 }
@@ -275,7 +289,12 @@ i, cite, em, var, address, dfn {
 }
 
 .home__newsletter {
-  height: 100vh;
+  @include breakpoint(small) {
+  height: auto
+  }
+  @include breakpoint(medium) {
+  height: 100vh
+  }
 }
 
 #preload {
@@ -285,4 +304,14 @@ i, cite, em, var, address, dfn {
   top: -9999px;
   height: 1px;
   width: 1px;
+}
+
+$aos-distance: 300px !default;
+
+[data-aos='fade-up'] {
+  transform: translate(0, $aos-distance);
+}
+
+[data-aos='slide-up'] {
+  transform: translateY(100%);
 }

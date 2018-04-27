@@ -7,22 +7,27 @@ images:
   alt: Organic barley
   aspect: landscape
   text-align: right
+  animation: up
 - image: "/uploads/douglas-fir-02.jpg"
   text: Douglas fir. Picked north of Copenhagen.
   alt: Douglas Fir
   aspect: square
   text-align: right
+  animation: up
 - image: "/uploads/room.jpg"
   text: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
   aspect: square
   text-align: right
+  animation: up
 - image: "/uploads/sieves.jpg"
   text: Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
   aspect: portrait
+  animation: up
 - image: "/uploads/vacuum.jpg"
   text: Our homemade vacuum still, Diessel. Operates at 10 degrees celcius.
   aspect: landscape
   text-align: left
+  animation: up
 products:
 - title: Easy Tiger
   image: "/uploads/easy-tiger.jpg"
@@ -58,7 +63,7 @@ products:
   link: https://shop.empiricalspirits.co
   color: "#ff0000"
 - title: Anne Bonny Blend
-  image: "/uploads/anne-bonny.jpg"
+  image: "/uploads/anne-bonny-blend.jpg"
   botanicals: Oyster, Gooseberry
   grains: Naked Barley, Pearled Barley, Pilsner Malt
   koji: Aspergillus Oryzae
