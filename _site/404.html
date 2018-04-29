@@ -32,37 +32,41 @@
   <link rel="alternate" type="application/rss+xml" title="Empirical Spirits" href="https://www.empiricalspirits.co/feed.xml">
 </head>
 <body>
-<div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
-<div class="grid-y align-center" style="height: 100%;">
-  <div class="shrink cell">
-    <ul class="menu vertical align-center text-uppercase">
-          <li><a href="https://shop.empiricalspirits.co" class="option" ><span>Buy<span></a></li>
-          <li><a href="mailto:contact@empiricalspirits.co" class="option" ><span>Contact<span></a></li>
-    </ul>
+<div class="home__hero__navigation padding-top-1 padding-right-1 padding-bottom-0 padding-left-0" id="menu">
+  <div class="grid-x grid-padding-x grid-padding-y align-justify">
+    <div class="auto cell navigation navigation__logo">
+      <ul class="menu simple align-bottom text-uppercase">
+          <li>Empirical Spirits</li>
+      </ul>
+    </div>
+    <div class="shrink cell navigation__menu show-for-large">
+      <ul class="menu simple align-center text-uppercase">
+        <li><a href="https://shop.empiricalspirits.co" class="navigation__menu__item" ><span>Buy<span></a></li>
+        <li><a href="/cocktails/" class="navigation__menu__item" ><span>Cocktails<span></a></li>
+        <li><a href="#newsletter" class="navigation__menu__item" data-smooth-scroll><span>Sign Up<span></a></li>
+        <li><a href="mailto:contact@empiricalspirits.co" class="navigation__menu__item" ><span>Contact<span></a></li>
+      </ul>
+    </div>
+    <div class="shrink cell navigation hide-for-large">
+      <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle">
+        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </button>
+    </div>
   </div>
 </div>
-</div>
-<div class="off-canvas-content missing" data-off-canvas-content>
+<div id="fullpage">
 <div class="grid-x grid-padding-x">
 	<div class="cell">
 		<p>Sorry, that page doesn’t exist</p>
 	</div>
 </div>
-<div class="grid-x padding-1 align-justify footer rellax" data-rellax-speed="0">
-  <div class="shrink cell">
-    <ul class="menu simple">
-      <li><a href="https://www.instagram.com/empiricalcph/" target="_blank">IN</a></li>
-      <li><a href="https://www.facebook.com/empiricalcph" target="_blank">FB</a></li>
-    </ul>
-  </div>
-  <div class="shrink cell slide-in-down">
-    <a href="/">© 2018</a>
-  </div>
 </div>
 <script src="/assets/js/min/app-min.js"></script>
 <script defer src="/assets/js/min/svgxuse-min.js"></script>
+<!--
 <script>
 </script>
+-->
 <div id="preload">
 </div>
 </body>

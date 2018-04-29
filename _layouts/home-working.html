@@ -2,70 +2,69 @@
 layout: default
 ---
 
+{% include navigation.html %}
 
 <!-- Hero -->
-<section class="section home__hero fp-auto-height-responsive">
+<section class="home__hero">
 	  
 	  <div class="home__hero__video grid-y align-center" style="height: 100%;">
+		  
 		  <div class="cell shrink">
+		  
 			  <div class="grid-x align-center">
 				  <div class="small-10 medium-8 cell rellax" data-rellax-speed="-7" data-rellax-percentage="0.5">
-  					<div class="responsive-embed">
-  					 <video src="assets/videos/hero.mp4" autoplay muted playsinline loop data-autoplay></video>
-  					</div> 
-				  </div> 
+					<div class="responsive-embed">
+					 <video src="assets/videos/hero.mp4" autoplay muted playsinline loop></video>
+					</div> 
+				</div> 
 			  </div>
-		  </div>
+			  
+		  </div> 
+		  
 	  </div> 
 	  
-    <div class="home__hero__logo rellax">
-      <div class="grid-y align-center" style="height: 100%;">
-        <div class="cell shrink">
-          <img src="/assets/img/logo-split.svg" class="home__hero__logo__split">
-        </div>
+  
+  <div class="home__hero__logo rellax">
+    <div class="grid-y align-center" style="height: 100%;">
+      <div class="cell shrink">
+        <img src="/assets/img/logo-split.svg" class="home__hero__logo__split">
       </div>
     </div>
-    
+  </div>
+  
 </section>
 <!-- End Hero -->
-
-<!-- Introduction -->
-<section class="section home__introduction padding-top-2 padding-bottom-2">
   
-
-  <div class="grid-y align-center" style="height: 100%;">
-    <div class="cell shrink">
-        
-    <div class="grid-container">
-      <div class="grid-x margin-bottom-2">
-          <div class="small-12 medium-12 cell text-uppercase">
-            <h2>Empirical Spirits is about swerving the categories</h2>
-          </div>
-      </div>
+<!-- Introduction -->
+<section class="home__introduction padding-top-2 padding-bottom-2">
+  
+  <div class="grid-container">
+    <div class="grid-x margin-bottom-2">
+        <div class="small-12 medium-12 cell text-uppercase" data-aos="fade-in">
+          <h2>Empirical Spirits is about swerving the categories</h2>
+        </div>
     </div>
-    
-    <div class="grid-container">
-      <div class="grid-x align-center">
-          <div class="small-12 medium-10 cell">
-            <h3>Choosing heirloom grains, koji and bespoke yeasts to ferment in-house, our one-off spirits reflect the time and place they came from: a product made in spring might taste different to one made in the fall. To help us highlight those differences, we have designed and built equipment that allows us to distill at 10°C, rather than boiling all the flavour away</h3>
-          </div>
-      </div>
-    </div>
-    
+  </div>
+  
+  <div class="grid-container">
+    <div class="grid-x">
+        <div class="small-12 medium-10 cell" data-aos="fade-up">
+          <h3>Choosing heirloom grains, koji and bespoke yeasts to ferment in-house, our one-off spirits reflect the time and place they came from: a product made in spring might taste different to one made in the fall. To help us highlight those differences, we have designed and built equipment that allows us to distill at 10°C, rather than boiling all the flavour away</h3>
+        </div>
     </div>
   </div>
 </section>
 <!-- End Introduction -->
 
 <!-- Images -->
-<section class="section home__images padding-top-2 padding-bottom-2">
+<section class="home__images padding-top-2 padding-bottom-2">
   <div class="grid-container">
     <div class="grid-x">
       <div class="small-12 cell">
       
         <div class="home__images__masonry">
           {% for image in page.images %}
-            <div class="home__images__masonry__item">
+            <div class="home__images__masonry__item" data-aos="fade-{{image.animation}}">
               {% if image.aspect == "square" %}
               {% include images/square.html %}
               {% elsif image.aspect == "landscape" %}
@@ -86,14 +85,16 @@ layout: default
 </section>
 <!-- End Images -->
 
+
+
 <!-- Products -->
-<section class="section home__products padding-top-2 padding-bottom-2">
+<section class="home__products padding-top-2 padding-bottom-2" id="bottles">
   
   <div class="grid-y align-center home__products__inner" style="height: 100%">
     <div class="shrink cell">
 
     <div class="grid-x grid-padding-y">
-        <div class="small-12 medium-12 cell text-uppercase text-center">
+        <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
           <h5 class="section__title">Bottles</h3>
         </div>
     </div>
@@ -102,7 +103,7 @@ layout: default
       
       <div class="cell small-12 medium-8 text-uppercase">
       {% for product in page.products %}
-        <a href="{{product.link}}" class="link" id="show_div-{{product.title | slugify}}" data-bgcolor="{{product.color}}" data-bg="{{product.image}}"><h1 class="home__products__title">{{product.title}}</h1></a>
+        <a href="{{product.link}}" class="link" id="show_div-{{product.title | slugify}}" data-bgcolor="{{product.color}}" data-bg="{{product.image}}"><h1 class="home__products__title" data-aos="fade-in">{{product.title}}</h1></a>
       {% endfor %}
       </div>
       
@@ -128,14 +129,15 @@ layout: default
 </section>
 <!-- End Products -->
 
+
 <!-- Stockists -->
-<section class="section home__stockists padding-top-2 padding-bottom-2">
+<section class="home__stockists padding-top-2 padding-bottom-2">
   
   <div class="grid-y align-center" style="height: 100%">
     <div class="shrink cell">
 
     <div class="grid-x padding-top-1 padding-bottom-1">
-        <div class="small-12 medium-12 cell text-uppercase text-center">
+        <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
           <h5 class="section__title">Stockists</h3>
         </div>
     </div>
@@ -156,20 +158,20 @@ layout: default
 <!-- End Stockists -->
 
 <!-- Newsletter -->
-<section class="section home__newsletter padding-top-3 padding-bottom-3" id="newsletter">
+<section class="home__newsletter padding-top-3 padding-bottom-3" id="newsletter">
   
   <div class="grid-y align-center" style="height: 100%">
     <div class="shrink cell">
 
       <div class="grid-x padding-top-3 padding-bottom-3">
-        <div class="small-12 medium-12 cell text-uppercase text-center">
+        <div class="small-12 medium-12 cell text-uppercase text-center" data-aos="fade-in">
           <h5 class="section__title">Newsletter</h3>
         </div>
       </div>
 
   
       <div class="grid-x padding-top-2 padding-bottom-2 align-center">
-        <div class="small-12 medium-6 cell">
+        <div class="small-12 medium-6 cell" data-aos="fade-in">
         <form action="" method="post" class="validate" target="_blank" novalidate="">
           
           <div class="input-group">

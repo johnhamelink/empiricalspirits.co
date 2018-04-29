@@ -39,7 +39,7 @@
     "what-input": "^5.0.2",
     "lightgallery": "^1.6.6",
     "rellax": "*",
-    "Scrollify": "^1.0.19"
+    "fullpage.js": "fullpage#^2.9.7"
   },
   "resolutions": {
     "what-input": "^5.0.2"

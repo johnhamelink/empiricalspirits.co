@@ -47,12 +47,6 @@ svg {
   outline: 0;
 }
 
-/*
-::-webkit-scrollbar { 
-  display: none; 
-}
-*/
-
 .content {
 /*
 background: rgb(38,34,34);
@@ -165,7 +159,6 @@ i, cite, em, var, address, dfn {
 .home__hero {
   position: relative;
   height: 100vh;
-  margin-top: -5rem;
 }
 
 .home__hero__logo__split {
@@ -254,6 +247,7 @@ i, cite, em, var, address, dfn {
 // 5. Stockists
 // ------------
 
+/*
 .home__stockists {
   @include breakpoint(small) {
   height: auto
@@ -272,6 +266,7 @@ i, cite, em, var, address, dfn {
   }
   overflow: scroll;
 }
+*/
 
 .home__stockist__title {
   &:hover {
@@ -306,4 +301,15 @@ $aos-distance: 300px !default;
 
 [data-aos='slide-up'] {
   transform: translateY(100%);
+}
+
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
 }

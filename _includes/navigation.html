@@ -1,47 +1,45 @@
-<div data-sticky-container style="z-index: 100;">
-  <div class="home__hero__navigation padding-top-1 padding-right-1 padding-bottom-0 padding-left-0" data-sticky data-options="marginTop:0;" style="width:100%">
-    {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
-    <!-- Navigation -->
-    <div class="grid-x grid-padding-x grid-padding-y align-justify">
-      
-      <div class="auto cell navigation navigation__logo">
-        <ul class="menu simple align-bottom text-uppercase">
-            <li>Empirical Spirits</li>
-        </ul>
-      </div>
-      
-      <div class="shrink cell navigation__menu show-for-large">
-        <ul class="menu simple align-center text-uppercase">
-          {% for entry in site.data.navigation %}
-          {% if entry.url == current_page %}
-          {% assign current = ' class="active"' %}
-          {% else %}
-          {% assign current = null %}
-          {% endif %}
-          {% assign sublinks = entry.sublinks %}
-          {% if sublinks %}
-          <li{{ current }}>
-          <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-          <ul class="menu vertical">
-          {% for sublink in sublinks %}
-          <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-          {% endfor %}
-          </ul>
-          </li>
-          {% else %}
-          <li{{ current }}><a href="{% if entry.url %}{{ entry.url }}{% elsif entry.id %}{{ entry.id }}{% endif %}" class="navigation__menu__item" {% if entry.id %}data-smooth-scroll{% endif %}><span>{{ entry.title }}<span></a></li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      
-      <div class="shrink cell navigation hide-for-large">
-        <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle">
-          <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-        </button>
-      </div>
-      
+<div class="home__hero__navigation padding-top-1 padding-right-1 padding-bottom-0 padding-left-0" id="menu">
+  {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
+  <!-- Navigation -->
+  <div class="grid-x grid-padding-x grid-padding-y align-justify">
+    
+    <div class="auto cell navigation navigation__logo">
+      <ul class="menu simple align-bottom text-uppercase">
+          <li>Empirical Spirits</li>
+      </ul>
     </div>
-    <!-- End Navigation -->
+    
+    <div class="shrink cell navigation__menu show-for-large">
+      <ul class="menu simple align-center text-uppercase">
+        {% for entry in site.data.navigation %}
+        {% if entry.url == current_page %}
+        {% assign current = ' class="active"' %}
+        {% else %}
+        {% assign current = null %}
+        {% endif %}
+        {% assign sublinks = entry.sublinks %}
+        {% if sublinks %}
+        <li{{ current }}>
+        <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
+        <ul class="menu vertical">
+        {% for sublink in sublinks %}
+        <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
+        {% endfor %}
+        </ul>
+        </li>
+        {% else %}
+        <li{{ current }}><a href="{% if entry.url %}{{ entry.url }}{% elsif entry.id %}{{ entry.id }}{% endif %}" class="navigation__menu__item" {% if entry.id %}data-smooth-scroll{% endif %}><span>{{ entry.title }}<span></a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    
+    <div class="shrink cell navigation hide-for-large">
+      <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle">
+        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </button>
+    </div>
+    
   </div>
-  </div>
+  <!-- End Navigation -->
+</div>
