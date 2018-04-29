@@ -71,6 +71,5 @@ $('#fullpage').fullpage({
   navigation: true,
 	menu: '#menu',
 	scrollingSpeed: 1000,
-	scrollBar:true,
-	parallax: true
+	scrollBar:true
 });

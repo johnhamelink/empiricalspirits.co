@@ -4749,7 +4749,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/fullpage.js\/dist\/jquery.fullpage.extensions.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -8618,8 +8618,14 @@
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/dist\/jquery.fullpage.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/dist\/jquery.fullpage.extensions.min.js",
 			"position": 8,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/dist\/jquery.fullpage.min.js",
+			"position": 9,
 			"type": 0
 			}
 		]
