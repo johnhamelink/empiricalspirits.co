@@ -146,16 +146,6 @@ i, cite, em, var, address, dfn {
 // 5. Hero
 // -------
 
-/*
-.home__hero__wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 700px;
-  background-color: green;
-}
-*/
-
 .home__hero {
   position: relative;
   height: 100vh;
@@ -275,15 +265,6 @@ i, cite, em, var, address, dfn {
   }
 }
 
-.home__newsletter {
-  @include breakpoint(small) {
-  height: auto
-  }
-  @include breakpoint(medium) {
-  height: 100vh
-  }
-}
-
 #preload {
   position: absolute;
   overflow: hidden;
@@ -303,13 +284,20 @@ $aos-distance: 300px !default;
   transform: translateY(100%);
 }
 
-#menu{
+#menu {
 	position:fixed;
 	top:0;
 	left:0;
-	height: 40px;
 	z-index: 70;
 	width: 100%;
 	padding: 0;
 	margin:0;
+}
+
+#footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index: 70;
+	width: 100%;
 }

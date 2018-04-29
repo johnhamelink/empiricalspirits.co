@@ -67,7 +67,6 @@ $(document).ready(function() {
 
 $('#fullpage').fullpage({
   scrollOverflow: true,
-  responsiveWidth: 900,
   verticalCentered: false,
   navigation: true,
   anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],

@@ -11,6 +11,7 @@ layout: compress
 
 <body>
 {% include navigation.html %}
+{% include footer.html %}
 
 <div id="fullpage">
 <!-- Content -->
@@ -22,7 +23,6 @@ layout: compress
 {% include scripts.html %}
 <!-- End Scripts -->
 
-<!--
 <script>
 {% for product in page.products %}
 $('#show_div-{{product.title | slugify}}').hover(function() { 
@@ -32,7 +32,6 @@ $('#show_div-{{product.title | slugify}}').hover(function() {
 });
 {% endfor %}
 </script>
--->
 
 <!-- Google Analytics -->
 {% if site.analytics %}
