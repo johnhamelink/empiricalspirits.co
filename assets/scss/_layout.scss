@@ -26,6 +26,10 @@
   }
 }
 
+video {
+  z-index: -10;
+}
+
 // 2. Global
 // ---------
 
@@ -45,13 +49,6 @@ svg {
 
 :focus {
   outline: 0;
-}
-
-.content {
-/*
-background: rgb(38,34,34);
-background: linear-gradient(180deg, rgba(38,34,34,1) 0%, rgba(38,34,34,1) 35%, rgba(38,34,34,1) 54%, rgba(28,111,97,1) 63%, rgba(23,127,109,1) 68%, rgba(18,136,117,1) 76%, rgba(64,44,37,1) 84%, rgba(38,34,34,1) 97%, rgba(38,34,34,1) 100%);
-*/
 }
 
 .section__title {
@@ -178,6 +175,26 @@ i, cite, em, var, address, dfn {
   width: 100%;
   }
 }
+
+.home__feature__video__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.home__feature__video__text h2 {
+  text-align: justify;
+  text-align-last: justify;
+  line-height: 0.95;
+  &:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  }
+}
+
 
 // 5. Images
 // ---------

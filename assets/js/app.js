@@ -71,5 +71,6 @@ $('#fullpage').fullpage({
   navigation: true,
   anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 	menu: '#menu',
-	scrollingSpeed: 1000
+	scrollingSpeed: 1000,
+	scrollBar:true
 });

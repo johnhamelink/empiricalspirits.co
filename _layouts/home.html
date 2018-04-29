@@ -30,14 +30,12 @@ layout: default
 
 <!-- Introduction -->
 <section class="section home__introduction padding-top-2 padding-bottom-2">
-  
-
   <div class="grid-y align-center" style="height: 100%;">
     <div class="cell shrink">
         
     <div class="grid-container">
       <div class="grid-x margin-bottom-2">
-          <div class="small-12 medium-12 cell text-uppercase">
+          <div class="small-12 medium-12 cell text-uppercase" data-aos="fade-up">
             <h2>Empirical Spirits is about swerving the categories</h2>
           </div>
       </div>
@@ -45,7 +43,7 @@ layout: default
     
     <div class="grid-container">
       <div class="grid-x align-center">
-          <div class="small-12 medium-10 cell">
+          <div class="small-12 medium-10 cell" data-aos="fade-up">
             <h3>Choosing heirloom grains, koji and bespoke yeasts to ferment in-house, our one-off spirits reflect the time and place they came from: a product made in spring might taste different to one made in the fall. To help us highlight those differences, we have designed and built equipment that allows us to distill at 10°C, rather than boiling all the flavour away</h3>
           </div>
       </div>
@@ -56,13 +54,50 @@ layout: default
 </section>
 <!-- End Introduction -->
 
+<!-- Feature Film -->
+<section class="section home__feature__video padding-top-2 padding-bottom-2">
+  
+	  <div class="grid-y align-center" style="height: 100%;">
+		  <div class="cell shrink">
+			  <div class="grid-x align-center">
+				  <div class="small-10 medium-8 cell" data-rellax-speed="-7" data-rellax-percentage="0.5">
+  					<div class="responsive-embed">
+  					 <video src="assets/videos/machinery.mp4" autoplay muted playsinline loop data-autoplay></video>
+  					</div> 
+				  </div> 
+			  </div>
+		  </div>
+	  </div> 
+	  
+    <div class="home__feature__video__text">
+      <div class="grid-y align-center" style="height: 100%;">
+        <div class="cell shrink">
+         
+         <div class="grid-container">
+          <div class="grid-x">
+            <div class="small-12 medium-12 cell text-uppercase" data-aos="fade-up">
+              <h2>Free-form spirits distilled ferments not conforming to a regular OR formal structure or shape</h2>
+            </div>
+          </div>
+        </div>
+    
+         
+         
+        </div>
+      </div>
+    </div>
+  
+  
+</section>
+<!-- End Feature Film -->
+
 <!-- Images -->
 <section class="section home__images padding-top-2 padding-bottom-2">
   <div class="grid-container">
     <div class="grid-x">
       <div class="small-12 cell">
       
-        <div class="home__images__masonry">
+        <div class="home__images__masonry" data-aos="fade-up">
           {% for image in page.images %}
             <div class="home__images__masonry__item">
               {% if image.aspect == "square" %}
@@ -87,7 +122,6 @@ layout: default
 
 <!-- Products -->
 <section class="section home__products padding-top-2 padding-bottom-2">
-  
   <div class="grid-y align-center home__products__inner" style="height: 100%">
     <div class="shrink cell">
 
@@ -123,13 +157,11 @@ layout: default
     
     </div>
   </div>
-
 </section>
 <!-- End Products -->
 
 <!-- Stockists -->
 <section class="section home__stockists padding-top-2 padding-bottom-2">
-  
   <div class="grid-y align-center" style="height: 100%">
     <div class="shrink cell">
 
@@ -150,13 +182,11 @@ layout: default
   
     </div>
   </div>
-    
 </section>
 <!-- End Stockists -->
 
 <!-- Newsletter -->
 <section class="section home__newsletter padding-top-3 padding-bottom-3" id="newsletter">
-  
   <div class="grid-y align-center" style="height: 100%">
     <div class="shrink cell">
 
@@ -186,7 +216,6 @@ layout: default
       </div>
       
     </div>
-  </div>
-    
+  </div>  
 </section>
 <!-- End Newsletter -->

@@ -184,12 +184,45 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/_uploads\/anne-bonny.jpg": {
+		"ft": 16384,
+		"iS": 567344,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/anne-bonny.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_uploads\/barley.jpg": {
 		"ft": 16384,
 		"iS": 1825078,
 		"jF": 0,
 		"oA": 1,
 		"oAP": "\/_uploads\/barley.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/charlene-mcgee.jpg": {
+		"ft": 16384,
+		"iS": 589918,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/charlene-mcgee.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/clarence-alabama.jpg": {
+		"ft": 16384,
+		"iS": 583405,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/clarence-alabama.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -212,6 +245,28 @@
 		"jF": 0,
 		"oA": 1,
 		"oAP": "\/_uploads\/douglas-fir-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/easy-tiger.jpg": {
+		"ft": 16384,
+		"iS": 716972,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/easy-tiger.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/fallen-pony.jpg": {
+		"ft": 16384,
+		"iS": 672156,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/fallen-pony.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -1140,6 +1195,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/videos\/hero.mp4",
+		"oF": 0
+		},
+	"\/assets\/videos\/machinery.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/videos\/machinery.mp4",
 		"oF": 0
 		},
 	"\/bower.json": {
