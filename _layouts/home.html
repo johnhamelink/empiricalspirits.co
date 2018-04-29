@@ -2,58 +2,27 @@
 layout: default
 ---
 
+{% include navigation.html %}
+
 <!-- Hero -->
 <section class="home__hero">
-  
-  <div class="home__hero__navigation padding-1">
-    {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
-    <!-- Navigation -->
-    <div class="grid-x grid-padding-x grid-padding-y align-justify">
-      
-      <div class="auto cell navigation navigation__logo">
-        <ul class="menu simple align-bottom">
-            <li><img src="/assets/icons/plate-icon.png"></li>
-        </ul>
-      </div>
-      
-      <div class="shrink cell navigation__menu show-for-medium">
-        <ul class="menu simple align-center text-uppercase">
-          {% for entry in site.data.navigation %}
-          {% if entry.url == current_page %}
-          {% assign current = ' class="active"' %}
-          {% else %}
-          {% assign current = null %}
-          {% endif %}
-          {% assign sublinks = entry.sublinks %}
-          {% if sublinks %}
-          <li{{ current }}>
-          <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-          <ul class="menu vertical">
-          {% for sublink in sublinks %}
-          <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-          {% endfor %}
-          </ul>
-          </li>
-          {% else %}
-          <li{{ current }}><a href="{% if entry.url %}{{ entry.url }}{% elsif entry.id %}{{ entry.id }}{% endif %}" class="navigation__menu__item" {% if entry.id %}data-smooth-scroll{% endif %}><span>{{ entry.title }}<span></a></li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      
-      <div class="shrink cell navigation show-for-small-only">
-        <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle">
-          <span class="hamburger-box"><span class="hamburger-inner"></span></span>
-        </button>
-      </div>
-      
-    </div>
-    <!-- End Navigation -->
-  </div>
-  
-  <div class="home__hero__video">
-    <video src="assets/videos/hero.mp4" autoplay muted playsinline loop></video>   
-  </div>
+	  
+	  <div class="home__hero__video grid-y align-center" style="height: 100%;">
+		  
+		  <div class="cell shrink">
+		  
+			  <div class="grid-x align-center">
+				  <div class="small-10 medium-8 cell rellax" data-rellax-speed="-7" data-rellax-percentage="0.5">
+					<div class="responsive-embed">
+					 <video src="assets/videos/hero.mp4" autoplay muted playsinline loop></video>
+					</div> 
+				</div> 
+			  </div>
+			  
+		  </div> 
+		  
+	  </div> 
+	  
   
   <div class="home__hero__logo rellax">
     <div class="grid-y align-center" style="height: 100%;">
@@ -67,7 +36,7 @@ layout: default
 <!-- End Hero -->
   
 <!-- Introduction -->
-<section class="home__introduction padding-top-2 padding-bottom-2" style="margin-top: -10rem;">
+<section class="home__introduction padding-top-2 padding-bottom-2">
   
   <div class="grid-container">
     <div class="grid-x margin-bottom-2">

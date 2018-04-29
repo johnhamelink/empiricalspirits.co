@@ -2,10 +2,6 @@
   url: https://shop.empiricalspirits.co
   id:
   
-- title: Bottles
-  url:
-  id: "#bottles"
-  
 - title: Cocktails
   url: /cocktails/
   id:

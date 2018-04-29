@@ -16,7 +16,7 @@
 <meta property="og:url" content="https://www.empiricalspirits.co/" />
 <meta property="og:site_name" content="Empirical Spirits" />
 <script type="application/ld+json">
-{"url":"https://www.empiricalspirits.co/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.empiricalspirits.co/assets/img/logo.svg"}},"headline":"Home","description":"Empirical Spirits. A Copenhagen-based distillery and fermentation workshop. On a constant search for flavor.","name":"Empirical Spirits","@type":"WebSite","@context":"http://schema.org"}</script>
+{"name":"Empirical Spirits","description":"Empirical Spirits. A Copenhagen-based distillery and fermentation workshop. On a constant search for flavor.","@type":"WebSite","url":"https://www.empiricalspirits.co/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://www.empiricalspirits.co/assets/img/logo.svg"}},"headline":"Home","@context":"http://schema.org"}</script>
   <title>Empirical Spirits</title>
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
@@ -52,33 +52,42 @@
 </div>
 </div>
 <div class="off-canvas-content home" data-off-canvas-content>
-<section class="home__hero">
-  <div class="home__hero__navigation padding-1">
+<div data-sticky-container style="z-index: 100;">
+  <div class="home__hero__navigation padding-top-1 padding-right-1 padding-bottom-0 padding-left-0" data-sticky data-options="marginTop:0;" style="width:100%">
     <div class="grid-x grid-padding-x grid-padding-y align-justify">
       <div class="auto cell navigation navigation__logo">
-        <ul class="menu simple align-bottom">
-            <li><img src="/assets/icons/plate-icon.png"></li>
+        <ul class="menu simple align-bottom text-uppercase">
+            <li>Empirical Spirits</li>
         </ul>
       </div>
-      <div class="shrink cell navigation__menu show-for-medium">
+      <div class="shrink cell navigation__menu show-for-large">
         <ul class="menu simple align-center text-uppercase">
           <li><a href="https://shop.empiricalspirits.co" class="navigation__menu__item" ><span>Buy<span></a></li>
-          <li><a href="#bottles" class="navigation__menu__item" data-smooth-scroll><span>Bottles<span></a></li>
           <li><a href="/cocktails/" class="navigation__menu__item" ><span>Cocktails<span></a></li>
           <li><a href="#newsletter" class="navigation__menu__item" data-smooth-scroll><span>Sign Up<span></a></li>
           <li><a href="mailto:contact@empiricalspirits.co" class="navigation__menu__item" ><span>Contact<span></a></li>
         </ul>
       </div>
-      <div class="shrink cell navigation show-for-small-only">
+      <div class="shrink cell navigation hide-for-large">
         <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle">
           <span class="hamburger-box"><span class="hamburger-inner"></span></span>
         </button>
       </div>
     </div>
   </div>
-  <div class="home__hero__video">
-    <video src="assets/videos/hero.mp4" autoplay muted playsinline loop></video>   
   </div>
+<section class="home__hero">
+	  <div class="home__hero__video grid-y align-center" style="height: 100%;">
+		  <div class="cell shrink">
+			  <div class="grid-x align-center">
+				  <div class="small-10 medium-8 cell rellax" data-rellax-speed="-7" data-rellax-percentage="0.5">
+					<div class="responsive-embed">
+					 <video src="assets/videos/hero.mp4" autoplay muted playsinline loop></video>
+					</div> 
+				</div> 
+			  </div>
+		  </div> 
+	  </div> 
   <div class="home__hero__logo rellax">
     <div class="grid-y align-center" style="height: 100%;">
       <div class="cell shrink">
@@ -87,7 +96,7 @@
     </div>
   </div>
 </section>
-<section class="home__introduction padding-top-2 padding-bottom-2" style="margin-top: -10rem;">
+<section class="home__introduction padding-top-2 padding-bottom-2">
   <div class="grid-container">
     <div class="grid-x margin-bottom-2">
         <div class="small-12 medium-12 cell text-uppercase" data-aos="fade-in">
