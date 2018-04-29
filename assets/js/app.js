@@ -43,9 +43,11 @@ $("a.link").hover(function() {
 // 5. Rellax
 // -------------
 
+/*
 $(function() {
 var rellax = new Rellax('.rellax');
 });
+*/
 
 /*
 $(function() {
@@ -54,3 +56,22 @@ $(function() {
   });
 });
 */
+
+
+/*
+$(document).ready(function() {
+	$('#fullpage').fullpage();
+	verticalCentered: false
+});
+*/
+
+$('#fullpage').fullpage({
+  scrollOverflow: true,
+  verticalCentered: false,
+  navigation: true,
+  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+	menu: '#menu',
+	scrollingSpeed: 1000,
+	scrollBar:true,
+	parallax: true
+});
