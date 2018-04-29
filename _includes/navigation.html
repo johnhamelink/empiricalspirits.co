@@ -1,4 +1,4 @@
-<div class="home__hero__navigation padding-top-1 padding-right-1 padding-bottom-0 padding-left-0" id="menu">
+<div class="home__hero__navigation" id="menu">
   {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
   <!-- Navigation -->
   <div class="grid-x grid-padding-x grid-padding-y align-justify">
