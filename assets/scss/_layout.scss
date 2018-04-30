@@ -57,7 +57,7 @@ svg {
 }
 
 .section {
-  padding: 5rem 0rem 5rem 0rem;
+  padding: 4rem 0rem 4rem 0rem;
 }
 
 #preload {
@@ -79,18 +79,16 @@ $aos-distance: 300px !default;
 	position:fixed;
 	top:0;
 	left:0;
-	z-index: 70;
+	z-index: 14;
 	width: 100%;
-	padding: 1rem;
 }
 
 #footer {
 	position:fixed;
 	bottom:0;
 	left:0;
-	z-index: 70;
+	z-index: 14;
 	width: 100%;
-  padding: 1rem;
 }
 
 

@@ -93,7 +93,7 @@ $body-antialiased: true;
 // $global-margin: 1rem;
 $global-margin: 1.5rem;
 // $global-padding: 1rem;
-$global-padding: 1.5rem;
+$global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
@@ -890,8 +890,8 @@ $grid-margin-gutters: (
 );
 */
 $grid-margin-gutters: (
-  small: 24px,
-  medium: 48px
+  small: 3rem,
+  medium: 4rem
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
