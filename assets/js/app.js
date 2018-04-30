@@ -59,5 +59,6 @@ $('#fullpage').fullpage({
 	menu: '#menu',
 	scrollingSpeed: 1000,
 	scrollBar:true,
-	loopBottom: true
+	loopBottom: true,
+	scrollOverflowReset: true
 });

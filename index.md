@@ -63,7 +63,7 @@ products:
   link: https://shop.empiricalspirits.co
   color: "#ff0000"
 - title: Anne Bonny Blend
-  image: "/uploads/anne-bonny-blend.jpg"
+  image: "/uploads/anne-bonny.jpg"
   botanicals: Oyster, Gooseberry
   grains: Naked Barley, Pearled Barley, Pilsner Malt
   koji: Aspergillus Oryzae
