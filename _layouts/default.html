@@ -10,6 +10,26 @@ layout: compress
 <!-- End Head -->
 
 <body>
+  
+{% if page.layout == "home" %}
+ <div class="grid-y align-center loader">
+   <div class="shrink cell">
+     <div class="grid-x grid-padding-x align-center">
+     	<div class="shrink cell text-uppercase" data-aos="fade-up">
+    		<h1>{{site.title}}</h1>
+    	</div>
+   </div>
+  </div>
+ </div>
+{% endif %}
+
+<!-- Off Canvas Navigation -->
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
+{% include offcanvas.html %}
+</div>
+<!-- End Off Canvas Navigation --> 
+
+<div class="off-canvas-content {{page.layout | slugify}}" data-off-canvas-content>
 {% include navigation.html %}
 {% include footer.html %}
 
@@ -17,6 +37,8 @@ layout: compress
 <!-- Content -->
 {{content}}
 <!-- End Content -->
+</div>
+
 </div>
 
 <!-- Scripts -->

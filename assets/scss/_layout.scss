@@ -56,6 +56,43 @@ svg {
   text-indent: $letter-spacing--loose;
 }
 
+.section {
+  padding: 4rem 1rem 4rem 1rem;
+}
+
+#preload {
+  position: absolute;
+  overflow: hidden;
+  left: -9999px;
+  top: -9999px;
+  height: 1px;
+  width: 1px;
+}
+
+$aos-distance: 300px !default;
+
+[data-aos='fade-up'] {
+  transform: translate(0, $aos-distance);
+}
+
+#menu {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 70;
+	width: 100%;
+	padding: 1rem;
+}
+
+#footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index: 70;
+	width: 100%;
+  padding: 1rem;
+}
+
 
 // 3. Typography
 // -------------
@@ -254,67 +291,9 @@ i, cite, em, var, address, dfn {
 // 5. Stockists
 // ------------
 
-/*
-.home__stockists {
-  @include breakpoint(small) {
-  height: auto
-  }
-  @include breakpoint(medium) {
-  height: 100vh
-  }
-}
-
-.home__stockists__list {
-  @include breakpoint(small) {
-  height: auto;
-  }
-  @include breakpoint(medium) {
-  height: 75vh;
-  }
-  overflow: scroll;
-}
-*/
-
 .home__stockist__title {
   &:hover {
   color: transparent;
   -webkit-text-stroke: 2px $white;
   }
-}
-
-#preload {
-  position: absolute;
-  overflow: hidden;
-  left: -9999px;
-  top: -9999px;
-  height: 1px;
-  width: 1px;
-}
-
-$aos-distance: 300px !default;
-
-[data-aos='fade-up'] {
-  transform: translate(0, $aos-distance);
-}
-
-[data-aos='slide-up'] {
-  transform: translateY(100%);
-}
-
-#menu {
-	position:fixed;
-	top:0;
-	left:0;
-	z-index: 70;
-	width: 100%;
-	padding: 1rem;
-}
-
-#footer {
-	position:fixed;
-	bottom:0;
-	left:0;
-	z-index: 70;
-	width: 100%;
-  padding: 1rem;
 }

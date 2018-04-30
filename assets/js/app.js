@@ -41,7 +41,7 @@ $("a.link").hover(function() {
 });
 
 // 5. Rellax
-// -------------
+// ---------
 
 /*
 $(function() {
@@ -49,21 +49,8 @@ var rellax = new Rellax('.rellax');
 });
 */
 
-/*
-$(function() {
-  $.scrollify({
-    section : ".example-classname",
-  });
-});
-*/
-
-
-/*
-$(document).ready(function() {
-	$('#fullpage').fullpage();
-	verticalCentered: false
-});
-*/
+// 5. Full Page
+// ------------
 
 $('#fullpage').fullpage({
   scrollOverflow: true,
@@ -71,5 +58,6 @@ $('#fullpage').fullpage({
   navigation: true,
 	menu: '#menu',
 	scrollingSpeed: 1000,
-	scrollBar:true
+	scrollBar:true,
+	loopBottom: true
 });
