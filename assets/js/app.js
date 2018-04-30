@@ -40,6 +40,13 @@ $("a.link").hover(function() {
 	$(".home__products__inner").css("background-image", '');
 });
 
+$(".cocktail-link").hover(function() {
+	$this = $(this);
+  $(".cocktails__inner").css("background-image", "url(" + $(this).data("bg") + ")");
+	}, function() {
+	$(".cocktails__inner").css("background-image", '');
+});
+
 // 5. Rellax
 // ---------
 

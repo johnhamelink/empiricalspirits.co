@@ -33,11 +33,11 @@ layout: compress
 {% include navigation.html %}
 {% include footer.html %}
 
-<div id="fullpage">
+
 <!-- Content -->
 {{content}}
 <!-- End Content -->
-</div>
+
 
 </div>
 
@@ -47,6 +47,14 @@ layout: compress
 
 <script>
 {% for product in page.products %}
+$('#show_div-{{product.title | slugify}}').hover(function() { 
+  $('#product-details-{{product.title | slugify}}').show(); 
+  }, function() { 
+  $('#product-details-{{product.title | slugify}}').hide(); 
+});
+{% endfor %}
+
+{% for product in page.cocktails %}
 $('#show_div-{{product.title | slugify}}').hover(function() { 
   $('#product-details-{{product.title | slugify}}').show(); 
   }, function() { 

@@ -132,6 +132,13 @@
 		"oAP": "\/_includes\/scripts.html",
 		"oF": 0
 		},
+	"\/_layouts\/cocktails.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/cocktails.html",
+		"oF": 0
+		},
 	"\/_layouts\/compress.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -139,18 +146,18 @@
 		"oAP": "\/_layouts\/compress.html",
 		"oF": 0
 		},
+	"\/_layouts\/contact.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_layouts\/contact.html",
+		"oF": 0
+		},
 	"\/_layouts\/default.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/_layouts\/default.html",
-		"oF": 0
-		},
-	"\/_layouts\/home-working.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/home-working.html",
 		"oF": 0
 		},
 	"\/_layouts\/home.html": {
@@ -190,6 +197,17 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/anne-bonny.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/baby-monster.jpg": {
+		"ft": 16384,
+		"iS": 8383519,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/baby-monster.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -4786,7 +4804,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/bower_components\/fullpage.js\/dist\/jquery.fullpage.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -8473,6 +8491,42 @@
 		"oAP": "\/bower_components\/what-input\/yarn.lock",
 		"oF": 0
 		},
+	"\/cocktails.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/cocktails.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/contact.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/contact.md",
+		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/Gemfile": {
 		"cB": 0,
 		"ft": 8192,
@@ -8612,26 +8666,20 @@
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/vendors\/scrolloverflow.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/dist\/jquery.fullpage.extensions.min.js",
 			"position": 7,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/vendors\/jquery.easings.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/vendors\/scrolloverflow.min.js",
 			"position": 8,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/dist\/jquery.fullpage.extensions.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/vendors\/jquery.easings.min.js",
 			"position": 9,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/dist\/jquery.fullpage.min.js",
-			"position": 10,
 			"type": 0
 			}
 		]
