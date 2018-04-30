@@ -174,7 +174,7 @@ html.fp-enabled,
     @include breakpoint(small) {
     visibility: hidden;
     }
-    @include breakpoint(medium) {
+    @include breakpoint(xxlarge) {
     visibility: visible;
     }
 }
