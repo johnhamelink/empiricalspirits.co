@@ -230,3 +230,9 @@ layout: default
 <!-- End Newsletter -->
 
 </div>
+
+<div id="preload">
+  {% for image in page.products %}
+    {% include images/portrait.html %}
+  {% endfor %}
+</div>

@@ -35,3 +35,9 @@ layout: default
   </div>
 
 <!-- End Cocktails -->
+
+<div id="preload">
+  {% for image in page.cocktails %}
+    {% include images/portrait.html %}
+  {% endfor %}
+</div>

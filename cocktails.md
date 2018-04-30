@@ -15,7 +15,7 @@ cocktails:
   image: "/uploads/easy-tiger.jpg"
   text: Quince Tea, Kombucha
 - title: Folk Fizz
-  image: "/uploads/easy-tiger.jpg"
+  image: "/uploads/folk-fizz.jpg"
   text: Quince Tea, Kombucha
 layout: cocktails
 ---
