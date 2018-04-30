@@ -1,7 +1,7 @@
 <div class="home__hero__navigation" id="menu">
   {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
   <!-- Navigation -->
-  <div class="grid-x grid-padding-x grid-padding-y align-justify">
+  <div class="grid-x grid-padding-x grid-padding-y align-justify align-middle">
     
     <div class="auto cell navigation navigation__logo">
       <ul class="menu simple align-bottom text-uppercase">
