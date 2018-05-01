@@ -180,26 +180,15 @@
 		"oAP": "\/build\/_site",
 		"oF": 0
 		},
-	"\/_uploads\/anne-bonny-blend.jpg": {
-		"ft": 16384,
-		"iS": 890019,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "\/_uploads\/anne-bonny-blend.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
 	"\/_uploads\/anne-bonny.jpg": {
 		"ft": 16384,
-		"iS": 567344,
+		"iS": 2069090,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/anne-bonny.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/baby-monster.jpg": {
@@ -210,7 +199,7 @@
 		"oAP": "\/_uploads\/baby-monster.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/barley.jpg": {
@@ -226,24 +215,24 @@
 		},
 	"\/_uploads\/charlene-mcgee.jpg": {
 		"ft": 16384,
-		"iS": 589918,
+		"iS": 3415983,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/charlene-mcgee.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/clarence-alabama.jpg": {
 		"ft": 16384,
-		"iS": 583405,
+		"iS": 3154844,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/clarence-alabama.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/douglas-fir-01.jpg": {
@@ -270,24 +259,24 @@
 		},
 	"\/_uploads\/easy-tiger.jpg": {
 		"ft": 16384,
-		"iS": 716972,
+		"iS": 2958337,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/easy-tiger.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/fallen-pony.jpg": {
 		"ft": 16384,
-		"iS": 672156,
+		"iS": 3042585,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/fallen-pony.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/folk-fizz.jpg": {
@@ -298,7 +287,7 @@
 		"oAP": "\/_uploads\/folk-fizz.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/_uploads\/room.jpg": {
@@ -792,7 +781,7 @@
 		},
 	"\/assets\/scss\/app.scss": {
 		"aP": 1,
-		"bl": 1,
+		"bl": 0,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
@@ -5174,7 +5163,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 2,
 		"oAP": "\/bower_components\/fullpage.js\/vendors\/jquery.easings.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -8510,9 +8499,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/cocktails.md",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "\/cocktails.html",
+		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -8528,9 +8517,9 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/contact.md",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "\/contact.html",
+		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -8588,6 +8577,24 @@
 		"oA": 1,
 		"oAP": "\/LICENSE.html",
 		"oF": 1,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/newsletter.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/newsletter.html",
+		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
@@ -8685,12 +8692,6 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/vendors\/scrolloverflow.min.js",
 			"position": 8,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/fullpage.js\/vendors\/jquery.easings.min.js",
-			"position": 9,
 			"type": 0
 			}
 		]
