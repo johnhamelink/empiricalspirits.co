@@ -9,9 +9,9 @@ details:
     Denmark
 
     [contact@empiricalspirits.co](mailto:contact@empiricalspirits.co)
-- title: Follow Us
+- title: Follow
   text: "[Instagram](https://www.instagram.com/empiricalcph) \n"
-- title: Work with us
+- title: Work
   text: |-
     We are currently offering paid internship programs in the production team. For more information contact [hire@empiricalspirits.co](mailto:hire@empiricalspirits.co)
 
