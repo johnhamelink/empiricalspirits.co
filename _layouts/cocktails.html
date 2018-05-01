@@ -24,7 +24,7 @@ layout: default
       <div class="cell small-12 medium-4 text-uppercase hide-for-small-only">
       {% for product in page.cocktails %}
           <div class="product-details" id="product-details-{{product.title | slugify}}" style="display: none;">
-            {{product.text}}
+            {{product.text | markdownify}}
           </div>
       {% endfor %}
       </div>

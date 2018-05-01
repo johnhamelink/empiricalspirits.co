@@ -235,6 +235,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/_uploads\/cloud-999.jpg": {
+		"ft": 16384,
+		"iS": 160318,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/cloud-999.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_uploads\/douglas-fir-01.jpg": {
 		"ft": 16384,
 		"iS": 2723619,
@@ -290,6 +301,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/_uploads\/neon-negroni.jpg": {
+		"ft": 16384,
+		"iS": 259969,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/neon-negroni.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/_uploads\/room.jpg": {
 		"ft": 16384,
 		"iS": 2175226,
@@ -307,6 +329,17 @@
 		"jF": 0,
 		"oA": 1,
 		"oAP": "\/_uploads\/sieves.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/_uploads\/theanine-dream.jpg": {
+		"ft": 16384,
+		"iS": 158580,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/_uploads\/theanine-dream.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -8583,6 +8616,13 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/newsletter.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/newsletter.html",
+		"oF": 0
 		},
 	"\/newsletter.md": {
 		"cB": 0,

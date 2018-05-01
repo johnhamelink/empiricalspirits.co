@@ -3,7 +3,7 @@ title: Cocktails
 position: 0
 cocktails:
 - title: Cloud 999
-  image: "/uploads/easy-tiger.jpg"
+  image: "/uploads/cloud-999.jpg"
   text: |-
     1\.5 oz Empirical Spirits Easy Tiger Blend \
     .5 oz Smith & Cross Rum \
@@ -12,7 +12,7 @@ cocktails:
     1 oz Pineapple Juice \
     1/2 oz Lime Juice
 - title: Neon Negroni
-  image: "/uploads/easy-tiger.jpg"
+  image: "/uploads/neon-negroni.jpg"
   text: |-
     1 oz Charlene McGee Blend\
     3/4 oz Suze\
@@ -31,7 +31,7 @@ cocktails:
     Freshly pressed tomato juice\
     Sesame chilli oils.
 - title: Theanine Dream
-  image: "/uploads/easy-tiger.jpg"
+  image: "/uploads/theanine-dream.jpg"
   text: Quince Tea, Kombucha
 - title: Folk Fizz
   image: "/uploads/folk-fizz.jpg"
