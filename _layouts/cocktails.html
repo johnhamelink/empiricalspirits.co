@@ -38,6 +38,6 @@ layout: default
 
 <div id="preload">
   {% for image in page.cocktails %}
-    {% include images/portrait.html %}
+    <img src="{{ image.image }}">
   {% endfor %}
 </div>
