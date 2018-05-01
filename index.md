@@ -86,7 +86,7 @@ products:
   color: "#ff0000"
 stockists:
 - title: Contra
-  link: https://www.google.com
+  link: http://www.contranyc.com
 - title: Clove Club
   link: https://thecloveclub.com
 - title: Bar Trench
