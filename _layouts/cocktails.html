@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<!-- Cocktails -->
+
+  <div class="grid-y align-center home__products__inner" style="height: 100vh">
+    <div class="shrink cell">
+
+    <div class="grid-x" data-aos="fade-up">
+        <div class="small-12 medium-12 cell text-uppercase text-center">
+          <h5 class="section__title">Cocktails</h3>
+        </div>
+    </div>
+      
+    <div class="grid-x grid-padding-x grid-padding-y" data-aos="fade-up">
+      
+      <div class="cell small-12 medium-8 text-uppercase">
+      {% for product in page.cocktails %}
+        <a href="{{product.link}}" class="link" id="show_div-{{product.title | slugify}}" data-bgcolor="{{product.color}}" data-bg="{{product.image}}"><h1 class="home__products__title">{{product.title}}</h1></a>
+      {% endfor %}
+      </div>
+      
+      <div class="cell small-12 medium-4 text-uppercase hide-for-small-only">
+      {% for product in page.cocktails %}
+          <div class="product-details" id="product-details-{{product.title | slugify}}" style="display: none;">
+            {{product.text}}
+          </div>
+      {% endfor %}
+      </div>
+      
+    </div>
+    
+    </div>
+  </div>
+
+<!-- End Cocktails -->
+
+<div id="preload">
+  {% for image in page.cocktails %}
+    {% include images/portrait.html %}
+  {% endfor %}
+</div>

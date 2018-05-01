@@ -33,11 +33,11 @@ layout: compress
 {% include navigation.html %}
 {% include footer.html %}
 
-<div id="fullpage">
+
 <!-- Content -->
 {{content}}
 <!-- End Content -->
-</div>
+
 
 </div>
 
@@ -53,6 +53,14 @@ $('#show_div-{{product.title | slugify}}').hover(function() {
   $('#product-details-{{product.title | slugify}}').hide(); 
 });
 {% endfor %}
+
+{% for product in page.cocktails %}
+$('#show_div-{{product.title | slugify}}').hover(function() { 
+  $('#product-details-{{product.title | slugify}}').show(); 
+  }, function() { 
+  $('#product-details-{{product.title | slugify}}').hide(); 
+});
+{% endfor %}
 </script>
 
 <!-- Google Analytics -->
@@ -60,12 +68,6 @@ $('#show_div-{{product.title | slugify}}').hover(function() {
 {% include analytics.html %}
 {% endif %}
 <!-- End Google Analytics -->
-
-<div id="preload">
-{% for image in page.products %}
-{% include images/portrait.html %}
-{% endfor %}
-</div>
 
 </body>
 
