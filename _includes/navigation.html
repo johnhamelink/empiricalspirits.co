@@ -5,7 +5,7 @@
     
     <div class="auto cell navigation navigation__logo">
       <ul class="menu simple align-bottom text-uppercase">
-          <li><a href="/">Empirical Spirits</a></li>
+          <li><a href="/"><img src="/assets/icons/logo.gif" class="navigation__logo__image"></a></li>
       </ul>
     </div>
     
@@ -28,7 +28,7 @@
         </ul>
         </li>
         {% else %}
-        <li{{ current }}><a href="{% if entry.url %}{{ entry.url }}{% elsif entry.id %}{{ entry.id }}{% endif %}" class="navigation__menu__item" {% if entry.id %}data-smooth-scroll{% endif %}><span>{{ entry.title }}<span></a></li>
+        <li{{ current }}><a href="{% if entry.url %}{{ entry.url }}{% elsif entry.id %}{{ entry.id }}{% endif %}" class="navigation__menu__item padding-left-2" {% if entry.id %}data-smooth-scroll{% endif %}><span>{{ entry.title }}<span></a></li>
         {% endif %}
         {% endfor %}
       </ul>

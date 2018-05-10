@@ -189,7 +189,7 @@
 		},
 	"\/_uploads\/anne-bonny.jpg": {
 		"ft": 16384,
-		"iS": 2069090,
+		"iS": 567344,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/anne-bonny.jpg",
@@ -222,7 +222,7 @@
 		},
 	"\/_uploads\/charlene-mcgee.jpg": {
 		"ft": 16384,
-		"iS": 3415983,
+		"iS": 589918,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/charlene-mcgee.jpg",
@@ -233,7 +233,7 @@
 		},
 	"\/_uploads\/clarence-alabama.jpg": {
 		"ft": 16384,
-		"iS": 3154844,
+		"iS": 583405,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/clarence-alabama.jpg",
@@ -277,7 +277,7 @@
 		},
 	"\/_uploads\/easy-tiger.jpg": {
 		"ft": 16384,
-		"iS": 2958337,
+		"iS": 716972,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/easy-tiger.jpg",
@@ -288,7 +288,7 @@
 		},
 	"\/_uploads\/fallen-pony.jpg": {
 		"ft": 16384,
-		"iS": 3042585,
+		"iS": 672156,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/_uploads\/fallen-pony.jpg",
@@ -570,6 +570,28 @@
 		"oA": 2,
 		"oAP": "\/assets\/fonts\/gt-america-expanded-medium.woff2",
 		"oF": 0
+		},
+	"\/assets\/fonts\/gt-america-medium.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/gt-america-medium.woff",
+		"oF": 0
+		},
+	"\/assets\/fonts\/gt-america-medium.woff2": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/fonts\/gt-america-medium.woff2",
+		"oF": 0
+		},
+	"\/assets\/icons\/logo.gif": {
+		"ft": 4194304,
+		"iS": 1586581,
+		"oA": 0,
+		"oAP": "\/assets\/icons\/logo.gif",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/assets\/icons\/plate-icon.png": {
 		"ft": 32768,
