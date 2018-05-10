@@ -19,7 +19,10 @@ cocktails:
     chilli oils  "
 - title: Theanine Dream
   image: "/uploads/theanine-dream.jpg"
-  text: 
+  text: "1\\.5 oz Helena    \\\n3/4 oz Island Evergreen  \\\n1/2 oz Koicha (\"Thick\"
+    Matcha)  \\\n3/4 oz Lemon Juice  \n\nCocktail is served on a large rock.Garnish
+    is Confectioner’s silver-dipped Maldon Salt and Mastiha, a minty resin from the
+    mastic tree."
 - title: Folk Fizz
   image: "/uploads/folk-fizz.jpg"
   text: "1.5 oz Fallen Pony Blend  \n1/2 oz Forthave \"Marseille\" Amaro (eucalyptus,
