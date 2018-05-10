@@ -85,23 +85,23 @@ products:
   link: https://shop.empiricalspirits.co
   color: "#ff0000"
 stockists:
-- title: Contra
+- title: Contra — New York City
   link: http://www.contranyc.com
-- title: Clove Club
+- title: Clove Club — London
   link: https://thecloveclub.com
-- title: Bar Trench
+- title: Bar Trench — Tokyo
   link: http://small-axe.net/bar-trench/
-- title: Eleven Madison
+- title: Eleven Madison — New York City
   link: https://www.elevenmadisonpark.com
-- title: Wild Air
+- title: Wild Air — New York City
   link: http://wildair.nyc
-- title: Cub
+- title: Cub — London
   link: http://www.lyancub.com
-- title: 108
+- title: 108 — Copenhagen
   link: https://108.dk
-- title: Noble Fine Liquor
+- title: Noble Fine Liquor — London
   link: https://www.noblefineliquor.co.uk
-- title: Amass
+- title: Amass — Copenhagen
   link: http://amassrestaurant.com
 - title: Mission Chinese Food
   link: https://www.missionchinesefood.com
