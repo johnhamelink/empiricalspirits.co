@@ -225,6 +225,11 @@ i, cite, em, var, address, dfn {
   }
 }
 
+.home__introduction {
+  text-align: justify;
+  text-align-last: justify;
+}
+
 .home__feature__video {
   position: relative;
   padding-top: 0;
@@ -334,8 +339,30 @@ i, cite, em, var, address, dfn {
 // -------------
 
 .home__newsletter {
-  background-image: url("/assets/icons/logo.gif");
-  background-repeat: no-repeat;
-  background-position: 50% 50%; 
-  background-size: 45%;
+  position: relative;
+}
+
+.home__newsletter video {
+  object-fit: contain;
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+}
+
+#empirical {
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 14;
+	width: 100%;
+}
+
+#spirits {
+	position:absolute;
+	bottom:0;
+	left:0;
+	z-index: 14;
+	width: 100%;
 }
