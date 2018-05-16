@@ -55,8 +55,8 @@
 </div>
 <div class="off-canvas-content home" data-off-canvas-content>
 <div class="home__hero__navigation" id="menu">
-  <div class="grid-x grid-padding-x grid-padding-y align-justify align-middle">
-    <div class="auto cell navigation navigation__logo">
+  <div class="grid-x align-justify align-middle">
+    <div class="auto cell navigation navigation__logo padding-1">
       <ul class="menu simple align-bottom text-uppercase">
         <li><a href="/"><img src="/assets/icons/logo.gif" class="navigation__logo__image"></a></li>
       </ul>
@@ -69,7 +69,7 @@
         <li><a href="/contact/" class="navigation__menu__item padding-left-3" ><span>Contact<span></a></li>
       </ul>
     </div>
-    <div class="shrink cell navigation hide-for-large">
+    <div class="shrink cell navigation hide-for-large padding-1">
       <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle">
         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
       </button>
@@ -81,14 +81,14 @@
     <ul class="menu simple">
       <li><a href="https://www.instagram.com/empiricalcph/" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
       <li><a href="https://www.facebook.com/empiricalcph" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-      <li><a href="https://twitter.com/empiricalcph" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+      <li class="show-for-large"><a href="https://twitter.com/empiricalcph" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
       <li><a href="mailto:someone@yoursite.com"><svg class="icon icon-send"><use xlink:href="/assets/icons/symbol-defs.svg#icon-send"></use></svg></a></li>
     </ul>
   </div>
   <div class="shrink cell slide-in-down">
    <ul class="menu simple text-uppercase">
-      <li><a href="https://www.instagram.com/empiricalcph/" target="_blank">Terms</a></li>
-      <li><a href="https://www.facebook.com/empiricalcph" target="_blank">Privacy</a></li>
+      <li class="show-for-large"><a href="https://www.instagram.com/empiricalcph/" target="_blank">Terms</a></li>
+      <li class="show-for-large"><a href="https://www.facebook.com/empiricalcph" target="_blank">Privacy</a></li>
       <li><a href="https://www.facebook.com/empiricalcph" target="_blank">©</a></li>
     </ul>
   </div>
@@ -230,14 +230,14 @@ alt=""
       </div>
     </div>
 </section>
-<section class="section home__feature__video" style="height: 100%;">
+<section class="section home__feature__video fp-auto-height-responsive" data-autoplay>
   <video src="assets/videos/machinery.mp4" autoplay muted playsinline loop data-autoplay></video>
     <div class="home__feature__video__text">
       <div class="grid-y align-center" style="height: 100%;">
         <div class="cell shrink">
          <div class="grid-container">
           <div class="grid-x">
-            <div class="small-12 medium-12 cell text-uppercase" data-aos="fade-up">
+            <div class="small-12 medium-12 cell text-uppercase">
               <h2>Free-form spirits distilled ferments not conforming to a regular OR formal structure or shape</h2>
             </div>
           </div>
@@ -377,7 +377,7 @@ alt=""
 <div class="" id="empirical">
   <div class="grid-x">
     <div class="small-12 cell text-center text-uppercase">
-      <h1>Empirical</h1>
+      <svg class="icon icon-empirical"><use xlink:href="/assets/icons/symbol-defs.svg#icon-empirical"></use></svg>
     </div>
   </div>
 </div>
@@ -385,7 +385,7 @@ alt=""
 <div class="" id="spirits">
   <div class="grid-x">
     <div class="small-12 cell text-center text-uppercase">
-      <h1>Spirits</h1>
+      <svg class="icon icon-spirits"><use xlink:href="/assets/icons/symbol-defs.svg#icon-spirits"></use></svg>
     </div>
   </div>
 </div>

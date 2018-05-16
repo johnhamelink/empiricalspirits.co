@@ -1,9 +1,9 @@
 <div class="home__hero__navigation" id="menu">
   {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
   <!-- Navigation -->
-  <div class="grid-x grid-padding-x grid-padding-y align-justify align-middle">
+  <div class="grid-x align-justify align-middle">
     
-    <div class="auto cell navigation navigation__logo">
+    <div class="auto cell navigation navigation__logo padding-1">
       <ul class="menu simple align-bottom text-uppercase">
         <li><a href="/"><img src="/assets/icons/logo.gif" class="navigation__logo__image"></a></li>
       </ul>
@@ -34,7 +34,7 @@
       </ul>
     </div>
     
-    <div class="shrink cell navigation hide-for-large">
+    <div class="shrink cell navigation hide-for-large padding-1">
       <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle">
         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
       </button>
