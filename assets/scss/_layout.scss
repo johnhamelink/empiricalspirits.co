@@ -62,7 +62,7 @@ svg {
 }
 
 .section {
-  padding: 5rem 0rem 5rem 0rem;
+  padding: 8rem 0rem 8rem 0rem;
 }
 
 .section-page  {
@@ -224,10 +224,17 @@ i, cite, em, var, address, dfn {
 
 .home__feature__video {
   position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.home__feature__video__video {
-  height: 100%;
+.home__feature__video video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .home__feature__video__text {
