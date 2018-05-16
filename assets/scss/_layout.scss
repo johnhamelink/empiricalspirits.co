@@ -230,12 +230,6 @@ i, cite, em, var, address, dfn {
   text-align-last: justify;
 }
 
-.home__feature__video {
-  position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .home__feature__video video {
   object-fit: cover;
   width: 100vw;
@@ -243,14 +237,6 @@ i, cite, em, var, address, dfn {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.home__feature__video__text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
 }
 
 .home__feature__video__text h2 {

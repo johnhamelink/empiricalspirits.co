@@ -84,5 +84,6 @@ $('#fullpage').fullpage({
 	scrollingSpeed: 1000,
 	scrollBar:true,
 	loopBottom: true,
-	scrollOverflowReset: true
+	scrollOverflowReset: true,
+	responsiveWidth: 640
 });
