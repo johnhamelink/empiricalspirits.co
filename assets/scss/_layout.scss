@@ -86,14 +86,24 @@ $aos-distance: 300px !default;
 }
 
 #menu {
-	position:fixed;
+  @include breakpoint(small) {
+	position:absolute;
+	width: 100%;
+  }
+  @include breakpoint(medium) {
+  position:fixed;
 	top:0;
 	left:0;
 	z-index: 14;
 	width: 100%;
+	}
 }
 
 #footer {
+  @include breakpoint(small) {
+	position:absolute;
+  }
+  @include breakpoint(medium) {
 	position:fixed;
 	bottom:0;
 	left:0;
@@ -101,6 +111,7 @@ $aos-distance: 300px !default;
 	width: 100%;
   font-family: $secondary-font-family;
   letter-spacing: $letter-spacing--loose;
+  }
 }
 
 
@@ -194,12 +205,21 @@ i, cite, em, var, address, dfn {
 
 .home__hero {
   position: relative;
-  height: 100vh;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  
 }
 
-.home__hero__logo__split {
+.video_small {
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;  
 }
 
 .home__hero__logo {
@@ -208,7 +228,6 @@ i, cite, em, var, address, dfn {
   left: 0;
   height: 100%;
   width: 100%;
-  margin-top: -1rem;
 }
 
 // 5. Introduction
