@@ -12,11 +12,12 @@ layout: compress
 <body>
   
 {% if page.layout == "home" %}
- <div class="grid-y align-center loader">
+ <div class="grid-y align-center loader" data-closable>
    <div class="shrink cell">
      <div class="grid-x grid-padding-x align-center">
-     	<div class="shrink cell text-uppercase" data-aos="fade-up">
+     	<div class="shrink cell text-uppercase text-center" data-aos="fade-up">
     		<h1>{{site.title}}</h1>
+    		<button type="button" class="button text-uppercase" data-close>I Am Over 18</button>
     	</div>
    </div>
   </div>
