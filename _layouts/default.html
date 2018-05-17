@@ -9,6 +9,8 @@ layout: compress
 {% include head.html %}
 <!-- End Head -->
 
+<script src="/assets/js/min/foundation-min.js"></script>
+
 <body>
   
 <div class="grid-y align-center loader" data-closable>
@@ -39,9 +41,9 @@ layout: compress
 
 </div>
 
-<!-- Scripts -->
-{% include scripts.html %}
-<!-- End Scripts -->
+<script src="/assets/js/min/app-min.js"></script>
+<script defer src="/assets/js/min/svgxuse-min.js"></script>
+<script src="/assets/js/min/fullpage-min.js"></script>
 
 <script>
 {% if page.layout == "home" %}
