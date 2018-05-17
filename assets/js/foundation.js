@@ -1,5 +1,3 @@
-$(document).foundation();
-
 // 1. Loading
 // --------------------
 
