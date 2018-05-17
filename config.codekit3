@@ -1270,11 +1270,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/assets\/videos\/hero-large.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/videos\/hero-large.mp4",
+		"oF": 0
+		},
 	"\/assets\/videos\/hero.mp4": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/assets\/videos\/hero.mp4",
+		"oF": 0
+		},
+	"\/assets\/videos\/logo.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/videos\/logo.mp4",
+		"oF": 0
+		},
+	"\/assets\/videos\/machinery-large.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/videos\/machinery-large.mp4",
 		"oF": 0
 		},
 	"\/assets\/videos\/machinery.mp4": {
