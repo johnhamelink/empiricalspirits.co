@@ -1,6 +1,19 @@
+
+
+$(document.body).on('click', 'button.age-button', function(){
+	// 
+	console.log('clicked button');
+})
+
+
+
+
+$(document).foundation();
+
 // 1. Loading
 // --------------------
 
+/*
 $(function() {
 if (sessionStorage.getItem('set') === 'set') {
   $('.loader').hide();
@@ -9,6 +22,7 @@ if (sessionStorage.getItem('set') === 'set') {
   sessionStorage.setItem('set', 'set');
 }
 });
+*/
 
 // 2. Animate on Scroll
 // --------------------
@@ -19,10 +33,9 @@ $(function() {
    easing: 'ease-in-out-quart', 
    duration: 600
    });   
-});
 
-$(function() {
-window.addEventListener('load', AOS.refresh);
+	
+	 window.addEventListener('load', AOS.refresh);
 });
 
 // 4. Background
