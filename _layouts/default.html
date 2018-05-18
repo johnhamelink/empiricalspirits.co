@@ -9,13 +9,11 @@ layout: compress
 {% include head.html %}
 <!-- End Head -->
 
-<script src="/assets/js/min/foundation-min.js"></script>
-
 <body>
   
 <div class="grid-y align-center loader" data-closable>
 	<div class="shrink cell">
-	 <div class="grid-x grid-padding-x align-center">
+	 <div class="grid-x grid-padding-x align-center" data-aos="fade-up">
 	 	<div class="shrink cell text-uppercase text-center">
 			<div><img src="/assets/icons/logo.gif" class="age-image"></div>
 			<button type="button" class="button text-uppercase age-button margin-top-1" data-close>I Am Over 18</button>
@@ -41,9 +39,9 @@ layout: compress
 
 </div>
 
+<script src="/assets/js/min/foundation-min.js"></script>
 <script src="/assets/js/min/app-min.js"></script>
 <script defer src="/assets/js/min/svgxuse-min.js"></script>
-<script src="/assets/js/min/fullpage-min.js"></script>
 
 <script>
 {% if page.layout == "home" %}
