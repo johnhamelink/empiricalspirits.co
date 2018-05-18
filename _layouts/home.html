@@ -37,7 +37,7 @@ layout: default
         
     <div class="grid-container">
       <div class="grid-x margin-bottom-2 align-center">
-          <div class="small-12 medium-10 cell text-uppercase">
+          <div class="small-12 medium-10 large-8 cell text-uppercase">
             <h2>Empirical Spirits is about swerving the categories</h2>
           </div>
       </div>
@@ -45,70 +45,48 @@ layout: default
     
     <div class="grid-container">
       <div class="grid-x">
-          <div class="small-12 medium-6 medium-offset-1 cell">
+          <div class="small-12 medium-6 medium-offset-1 large-offset-2 cell">
             <p>Founded by Lars Williams and Mark Emil Hermansen. Empirical Spirits is a Copenhagen based free-form distillery and fermentation workshop.</p>
 
             <p>Building deliciousness from the base up, each individual ingredient is handpicked for its character and freshness - from local biodynamic grains to bespoke yeasts, and koji strains. Reflecting the variance of nature, our offerings will transform as the season change.</p>
             
             <p>Our homemade vacuum stills operate at roughly 10 degrees Celsius, meaning that rather than heating everything to the typical boiling point, lower temperatures help us to retain the botanical subtleties, as well as the flavors, created during fermentation.</p>
           </div>
-      </div>    </div>
+      </div>    
+    </div>
     
     </div>
   </div>
 </section>
 <!-- End Introduction -->
 
+<!--
+<div class="home__images__test" id="home__images__test" style="height: 3000px; width: 100%; position: relative; background-color: red; overflow: hidden" data-sticky-container>
+	
 
-<div id="home__images__test" data-sticky-container data-check-every"0">
-	
-	<div class="grid-x" style="overflow: hidden">
+			<div class="sticky" data-sticky data-anchor="home__images__test">
+		    <img data-interchange="[{{ "uploads/vacuum.jpg" | imgix_url: w: 320, h: 320, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+			</div>
+-->
 			
-				<div class="small-3 cell">
-					<div sticky data-sticky data-top-anchor="home__images__test:top" data-btm-anchor="home__images__test:top" data-aos="fade-up">
-						
-						
-			    	<img src="uploads/vacuum.jpg" class="margin-top-3 margin-bottom-3" data-aos="fade-up">
-			    	
-			    	<img src="uploads/sieves.jpg" class="margin-2 padding-bottom-3" data-aos="fade-up">
-			    	
-			    	
-					</div>
-					
-				</div>
-	
-				<div class="small-4 cell">
-					<div sticky data-sticky data-top-anchor="home__images__test:top" data-btm-anchor="home__images__test:top">
-			    	<img src="uploads/barley.jpg" class="margin-3 padding-bottom-3 padding-top-2" data-aos="fade-up">
-			    	
-			    	<img src="uploads/barley.jpg" class="margin-3 padding-bottom-3 padding-top-2" data-aos="fade-down">
-			    	
-					</div>
-				</div>
+<!--
+			<div class="sticky" data-sticky data-anchor="home__images__test">
+		    	<img src="uploads/vacuum.jpg">
+			</div>	
 			
-				<div class="small-2 cell">
-					<div sticky data-sticky data-top-anchor="home__images__test:top" data-btm-anchor="home__images__test:top">
-			    	<img src="uploads/room.jpg" class="margin-top-3 margin-bottom-3" data-aos="fade-down">
-			    	
-			    	<img src="uploads/room.jpg" class="margin-top-3 margin-bottom-3" data-aos="fade-down">
-					</div>
-				</div>
-	
-				<div class="small-3 cell">
-					<div sticky data-sticky data-top-anchor="home__images__test:top" data-btm-anchor="home__images__test:top">
-			    	<img src="uploads/sieves.jpg" class="margin-3">
-			    	
-			    	<img src="uploads/douglas-fir-02.jpg" class="margin-3 padding-bottom-3">
-					</div>
-				</div>
-				
+			<div class="sticky padding-3" data-sticky data-anchor="home__images__test">
+		    	<img src="uploads/sieves.jpg">
+			</div>	
 			
-	</div>
+			<div class="sticky" data-sticky data-anchor="home__images__test">
+		    	<img src="uploads/vacuum.jpg">
+			</div>	
+-->
+
 	
-</div>
+<!-- </div> -->
 
 <!-- Images -->
-<!--
 <section class="section home__images">
   <div class="grid-container">
     <div class="grid-x">
@@ -135,7 +113,6 @@ layout: default
       </div>
     </div>
 </section>
--->
 <!-- End Images -->
 
 <!-- Feature Film -->
@@ -149,7 +126,7 @@ layout: default
 
       <div class="grid-container">
         <div class="grid-x grid-padding-x align-center home__feature__video__text" data-aos="fade-up">
-          <div class="small-12 medium-12 cell text-uppercase">
+          <div class="small-12 medium-10 large-8 cell text-uppercase">
           <h2>Free-form spirits distilled ferments not conforming to a regular or formal structure or shape</h2>
           </div>
         </div>
@@ -238,7 +215,7 @@ layout: default
   </div>
 </div>
 
-<video data-src="assets/videos/logo.mp4" autoplay muted playsinline loop data-autoplay></video>
+<video src="assets/videos/logo.mp4" autoplay muted playsinline loop data-autoplay></video>
   
 
 <div class="show-for-medium" id="spirits">
