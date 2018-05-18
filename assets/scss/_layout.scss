@@ -74,6 +74,11 @@ svg {
   padding: 8rem 0rem 8rem 0rem;
 }
 
+.section-page  {
+  padding: 5rem 0rem 5rem 0rem;
+  min-height: 100vh;
+}
+
 #preload {
   position: absolute;
   overflow: hidden;
@@ -374,4 +379,11 @@ i, cite, em, var, address, dfn {
 	left:0;
 	z-index: 14;
 	width: 100%;
+}
+
+// 6. Contact
+// -------------
+
+.contact p {
+	font-family: $secondary-font-family;
 }

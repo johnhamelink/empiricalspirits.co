@@ -4,8 +4,8 @@ position: 2
 details:
 - title: General
   text: |-
-    Refshalevej 173A, Port 2,
-    Copenhagen 1432
+    Refshalevej 173A, Port 2  
+    Copenhagen 1432    
     Denmark
 
     [contact@empiricalspirits.co](mailto:contact@empiricalspirits.co)
