@@ -40,7 +40,7 @@ products:
   maturation: 
   link: https://shop.empiricalspirits.co
   color: "#ff0000"
-- title: Fallen Pony Blend
+- title: Fallen Pony
   image: "/uploads/fallen-pony.jpg"
   botanicals: Quince Tea, Quince Tea Kombucha
   grains: Naked Barley, Pearled Barley, Pilsner Malt
@@ -51,7 +51,7 @@ products:
   maturation: 
   link: https://shop.empiricalspirits.co
   color: "#ff0000"
-- title: Charlene McGee Blend
+- title: Charlene McGee
   image: "/uploads/charlene-mcgee.jpg"
   botanicals: Smoked Juniper
   grains: Naked Barley, Pearled Barley, Pilsner Malt
@@ -62,7 +62,7 @@ products:
   maturation: Oloroso Cask
   link: https://shop.empiricalspirits.co
   color: "#ff0000"
-- title: Anne Bonny Blend
+- title: Anne Bonny
   image: "/uploads/anne-bonny.jpg"
   botanicals: Oyster, Gooseberry
   grains: Naked Barley, Pearled Barley, Pilsner Malt
@@ -73,7 +73,7 @@ products:
   maturation: 
   link: https://shop.empiricalspirits.co
   color: "#ff0000"
-- title: Clarence & Alabama Blend
+- title: Clarence & Alabama
   image: "/uploads/clarence-alabama.jpg"
   botanicals: Lemon Verbena, Douglas Fir Kombucha
   grains: Naked Barley, Pearled Barley, Pilsner Malt

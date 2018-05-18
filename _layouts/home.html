@@ -2,18 +2,17 @@
 layout: default
 ---
 
-<div id="fullpage">
+<!-- <div id="fullpage"> -->
   
 <!-- Hero -->
-<section class="section home__hero">
+<section class="section home__hero" style="height: 100vh;">
 	  
-	  <div class="home__hero__video grid-y align-center show-for-medium" style="height: 100%;">
+	  <div class="home__hero__video grid-y align-center" style="height: 100%;">
 		  <div class="cell shrink">
 			  <div class="grid-x align-center">
 				  <div class="small-11 medium-8 cell">
   					<div class="responsive-embed">
-<video data-src="assets/videos/hero.mp4" autoplay muted playsinline loop data-autoplay></video>
-
+  						<video src="assets/videos/hero.mp4" autoplay muted playsinline loop data-autoplay></video>
   					</div> 
 				  </div> 
 			  </div>
@@ -38,7 +37,7 @@ layout: default
         
     <div class="grid-container">
       <div class="grid-x margin-bottom-2 align-center">
-          <div class="small-12 medium-10 cell text-uppercase">
+          <div class="small-12 medium-10 large-8 cell text-uppercase">
             <h2>Empirical Spirits is about swerving the categories</h2>
           </div>
       </div>
@@ -46,14 +45,14 @@ layout: default
     
     <div class="grid-container">
       <div class="grid-x">
-          <div class="small-12 medium-6 medium-offset-1 cell">
+          <div class="small-12 medium-6 medium-offset-1 large-offset-2 cell">
             <p>Founded by Lars Williams and Mark Emil Hermansen. Empirical Spirits is a Copenhagen based free-form distillery and fermentation workshop.</p>
 
             <p>Building deliciousness from the base up, each individual ingredient is handpicked for its character and freshness - from local biodynamic grains to bespoke yeasts, and koji strains. Reflecting the variance of nature, our offerings will transform as the season change.</p>
             
             <p>Our homemade vacuum stills operate at roughly 10 degrees Celsius, meaning that rather than heating everything to the typical boiling point, lower temperatures help us to retain the botanical subtleties, as well as the flavors, created during fermentation.</p>
           </div>
-      </div>
+      </div>    
     </div>
     
     </div>
@@ -61,9 +60,33 @@ layout: default
 </section>
 <!-- End Introduction -->
 
+<!--
+<div class="home__images__test" id="home__images__test" style="height: 3000px; width: 100%; position: relative; background-color: red; overflow: hidden" data-sticky-container>
+	
+
+			<div class="sticky" data-sticky data-anchor="home__images__test">
+		    <img data-interchange="[{{ "uploads/vacuum.jpg" | imgix_url: w: 320, h: 320, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+			</div>
+-->
+			
+<!--
+			<div class="sticky" data-sticky data-anchor="home__images__test">
+		    	<img src="uploads/vacuum.jpg">
+			</div>	
+			
+			<div class="sticky padding-3" data-sticky data-anchor="home__images__test">
+		    	<img src="uploads/sieves.jpg">
+			</div>	
+			
+			<div class="sticky" data-sticky data-anchor="home__images__test">
+		    	<img src="uploads/vacuum.jpg">
+			</div>	
+-->
+
+	
+<!-- </div> -->
 
 <!-- Images -->
-<!--
 <section class="section home__images">
   <div class="grid-container">
     <div class="grid-x">
@@ -90,21 +113,20 @@ layout: default
       </div>
     </div>
 </section>
--->
 <!-- End Images -->
 
 <!-- Feature Film -->
 
-<section class="section home__feature__video">
+<section class="section home__feature__video" style="height: 100vh;">
 
-<video src="assets/videos/machinery.mp4" autoplay muted playsinline loop data-autoplay style="height: 100%;"></video>
+<video src="assets/videos/machinery.mp4" autoplay muted playsinline loop data-autoplay></video>
 
   <div class="grid-y align-center" style="height: 100%;">
     <div class="shrink cell">
 
       <div class="grid-container">
         <div class="grid-x grid-padding-x align-center home__feature__video__text" data-aos="fade-up">
-          <div class="small-12 medium-12 cell text-uppercase">
+          <div class="small-12 medium-10 large-8 cell text-uppercase">
           <h2>Free-form spirits distilled ferments not conforming to a regular or formal structure or shape</h2>
           </div>
         </div>
@@ -117,7 +139,7 @@ layout: default
 <!-- End Feature Film -->
 
 <!-- Products -->
-<section class="section home__products">
+<section class="section home__products" style="height: 100vh;">
   <div class="grid-y align-center home__products__inner" style="height: 100%">
     <div class="shrink cell">
 
@@ -157,15 +179,16 @@ layout: default
 <!-- End Products -->
 
 <!-- Stockists -->
-<section class="section home__stockists">
-  <div class="grid-y align-center" style="height: 100%">
-    <div class="shrink cell">
-
-    <div class="grid-x margin-bottom-2" data-aos="fade-up">
+<section class="section home__stockists" style="height: 100vh;">
+	
+	   <div class="grid-x margin-bottom-2" data-aos="fade-up">
         <div class="small-12 medium-12 cell text-uppercase text-center">
           <h5 class="section__title">Stockists</h3>
         </div>
     </div>
+    
+  <div class="grid-y align-center margin-top-3 margin-bottom-3" style="height: 75%; overflow: scroll;">
+    <div class="small-12 cell">
   
     
     <div class="grid-x home__stockists__list" data-aos="fade-up">
@@ -182,7 +205,7 @@ layout: default
 <!-- End Stockists -->
 
 <!-- Newsletter -->
-<section class="section home__newsletter">
+<section class="section home__newsletter" style="height: 100vh;">
 
 <div class="show-for-medium" id="empirical">
   <div class="grid-x">
@@ -236,7 +259,7 @@ layout: default
 </section>
 <!-- End Newsletter -->
 
-</div>
+<!-- </div> -->
 
 <div id="preload">
   {% for image in page.products %}
