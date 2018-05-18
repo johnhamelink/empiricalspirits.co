@@ -218,6 +218,15 @@ i, cite, em, var, address, dfn {
   
 }
 
+.home__hero_video__small {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .video_small {
   object-fit: cover;
   width: 100%;
