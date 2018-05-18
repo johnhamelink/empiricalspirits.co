@@ -109,21 +109,15 @@ $aos-distance: 300px !default;
 }
 
 #footer {
-/*
-  @include breakpoint(small) {
-	position:absolute;
-  }
-*/
-  @include breakpoint(medium) {
 	position:fixed;
 	bottom:0;
 	left:0;
 	z-index: 14;
 	width: 100%;
-  font-family: $secondary-font-family;
-  letter-spacing: $letter-spacing--loose;
-  }
+	font-family: $secondary-font-family;
+	letter-spacing: $letter-spacing--loose;
 }
+
 
 
 // 3. Typography
@@ -386,155 +380,3 @@ i, cite, em, var, address, dfn {
 	z-index: 14;
 	width: 100%;
 }
-
-.section-wrap {
-height: auto;
-overflow: visible;
-}
-
-.section-wrap {
-position: relative;
-height: 900vh;
-overflow: hidden;
-}
-
-/*
-#no-caps-wrap {
-    background: grey
-}
-
-#no-caps-wrap .one img {
-    left: 25%;
-    top: 8%;
-    width: 17%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .one img {
-        top: 4%;
-        left: 30%;
-        width: 55%
-    }
-}
-
-#no-caps-wrap .two img {
-    left: 2%;
-    top: 0;
-    width: 20%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .two img {
-        left: 0;
-        width: 60%
-    }
-}
-
-#no-caps-wrap .three video {
-    left: 1%;
-    top: 40%;
-    width: 20%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .three video {
-        left: 10%;
-        width: 60%
-    }
-}
-
-#no-caps-wrap .four img {
-    right: 5%;
-    top: 10%;
-    width: 22%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .four img {
-        top: 3%;
-        width: 52%
-    }
-}
-
-#no-caps-wrap .five video {
-    right: 20%;
-    top: 25%;
-    width: 18%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .five video {
-        right: 0;
-        top: 55%;
-        width: 48%
-    }
-}
-
-#no-caps-wrap .six img {
-    left: 70%;
-    top: 50%;
-    width: 20%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .six img {
-        right: 0;
-        top: 50%;
-        width: 60%
-    }
-}
-
-#no-caps-wrap .seven img {
-    width: 25%;
-    top: 27%;
-    left: 40%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .seven img {
-        right: 45%;
-        top: 10%;
-        width: 30%
-    }
-}
-
-#no-caps-wrap .eight img {
-    width: 25%;
-    top: 48%;
-    left: 20%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .eight img {
-        width: 45%;
-        top: 30%;
-        left: 5%
-    }
-}
-
-#no-caps-wrap .image-wrap {
-    width: 50%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .image-wrap {
-        width: 90%;
-        overflow: hidden
-    }
-}
-
-#no-caps-wrap .image-wrap path {
-    fill: #0a0a0a
-}
-
-#no-caps-wrap .image-wrap .strike {
-    background: #0a0a0a;
-    top: 59%
-}
-
-@media only screen and (max-width:700px) {
-    #no-caps-wrap .image-wrap .strike {
-        height: 2.5vmax
-    }
-}
-*/

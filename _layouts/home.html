@@ -60,33 +60,28 @@ layout: default
 </section>
 <!-- End Introduction -->
 
-<!--
-<div class="home__images__test" id="home__images__test" style="height: 3000px; width: 100%; position: relative; background-color: red; overflow: hidden" data-sticky-container>
+<div class="home__images__test" id="home__images__test" style="height: auto; width: 100vw;">
 	
-
-			<div class="sticky" data-sticky data-anchor="home__images__test">
-		    <img data-interchange="[{{ "uploads/vacuum.jpg" | imgix_url: w: 320, h: 320, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
-			</div>
--->
-			
-<!--
-			<div class="sticky" data-sticky data-anchor="home__images__test">
-		    	<img src="uploads/vacuum.jpg">
-			</div>	
-			
-			<div class="sticky padding-3" data-sticky data-anchor="home__images__test">
-		    	<img src="uploads/sieves.jpg">
-			</div>	
-			
-			<div class="sticky" data-sticky data-anchor="home__images__test">
-		    	<img src="uploads/vacuum.jpg">
-			</div>	
--->
-
+	<div style="position: -webkit-sticky; top: 0; width: 100%; height: 100vh;">
+			<img style="position: absolute; top: 10%; left: 30%; width: 20%" data-interchange="[{{ "uploads/vacuum.jpg" | imgix_url: w: 480, h: 480, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+	</div>
 	
-<!-- </div> -->
+	<div style="position: -webkit-sticky; top: 0; width: 100%; height: 100vh;">
+		<img style="position: absolute; top: 20%; left: 10%; width: 35%" data-interchange="[{{ "uploads/barley.jpg" | imgix_url: w: 480, h: 480, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+	</div>
+	
+	<div style="position: -webkit-sticky; top: 0; width: 100%; height: 100vh;">
+			<img style="position: absolute; bottom: 10%; right: 25%; width: 35%" data-interchange="[{{ "uploads/douglas-fir-02.jpg" | imgix_url: w: 480, h: 480, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+	</div>
+	
+	<div style="position: -webkit-sticky; top: 0; width: 100%; height: 100vh;">
+			<img style="position: absolute; bottom: 35%; right: 5%; width: 25%" data-interchange="[{{ "uploads/room.jpg" | imgix_url: w: 480, h: 480, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+	</div>
+
+</div>
 
 <!-- Images -->
+<!--
 <section class="section home__images">
   <div class="grid-container">
     <div class="grid-x">
@@ -113,6 +108,7 @@ layout: default
       </div>
     </div>
 </section>
+-->
 <!-- End Images -->
 
 <!-- Feature Film -->
