@@ -30,8 +30,17 @@ video {
   z-index: -10;
 }
 
+.age-image {
+  width: 128px;
+  height: 128px;
+}
+
 // 2. Global
 // ---------
+
+img {
+max-width: 100%;
+}
 
 small {
 font-family: $secondary-font-family;
@@ -62,7 +71,7 @@ svg {
 }
 
 .section {
-  padding: 6rem 0rem 6rem 0rem;
+  padding: 8rem 0rem 8rem 0rem;
 }
 
 .section-page  {
@@ -100,19 +109,15 @@ $aos-distance: 300px !default;
 }
 
 #footer {
-  @include breakpoint(small) {
-	position:absolute;
-  }
-  @include breakpoint(medium) {
 	position:fixed;
 	bottom:0;
 	left:0;
 	z-index: 14;
 	width: 100%;
-  font-family: $secondary-font-family;
-  letter-spacing: $letter-spacing--loose;
-  }
+	font-family: $secondary-font-family;
+	letter-spacing: $letter-spacing--loose;
 }
+
 
 
 // 3. Typography
@@ -152,7 +157,7 @@ i, cite, em, var, address, dfn {
 }
 
 .navigation__logo img {
-  width: 4rem;
+  width: 5rem;
   height: auto;
 }
 
@@ -213,6 +218,15 @@ i, cite, em, var, address, dfn {
   
 }
 
+.home__hero_video__small {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .video_small {
   object-fit: cover;
   width: 100%;
@@ -247,6 +261,10 @@ i, cite, em, var, address, dfn {
 .home__introduction {
   text-align: justify;
   text-align-last: justify;
+}
+
+.home__feature__video {
+  position: relative;
 }
 
 .home__feature__video video {
@@ -370,4 +388,11 @@ i, cite, em, var, address, dfn {
 	left:0;
 	z-index: 14;
 	width: 100%;
+}
+
+// 6. Contact
+// -------------
+
+.contact p {
+	font-family: $secondary-font-family;
 }

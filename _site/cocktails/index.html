@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,6 +32,16 @@
   <link rel="alternate" type="application/rss+xml" title="Empirical Spirits" href="https://www.empiricalspirits.co/feed.xml">
 </head>
 <body>
+<div class="grid-y align-center loader" data-closable>
+	<div class="shrink cell">
+	 <div class="grid-x grid-padding-x align-center" data-aos="fade-up">
+	 	<div class="shrink cell text-uppercase text-center">
+			<div><img src="/assets/icons/logo.gif" class="age-image"></div>
+			<button type="button" class="button text-uppercase age-button margin-top-1" data-close>I Am Over 18</button>
+		</div>
+	</div>
+	</div>
+</div>
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
 <div class="grid-y align-center" style="height: 100%;">
   <div class="shrink cell">
@@ -45,23 +55,22 @@
 </div>
 </div>
 <div class="off-canvas-content cocktails" data-off-canvas-content>
-<div class="home__hero__navigation" id="menu">
+<div class="home__hero__navigation padding-2" id="menu">
   <div class="grid-x align-justify align-middle">
     <div class="auto cell navigation navigation__logo padding-1">
       <ul class="menu simple align-bottom text-uppercase">
-        <li><a href="/"><img src="/assets/icons/logo.gif" class="navigation__logo__image"></a></li>
+        <li><a href="/"><img src="/assets/icons/logo.gif" class="navigation__logo__image" data-aos="fade-down"></a></li>
       </ul>
     </div>
     <div class="shrink cell navigation__menu show-for-large padding-right-2">
-      <ul class="menu simple align-center text-uppercase">
+      <ul class="menu simple align-center text-uppercase" data-aos="fade-down">
         <li><a href="https://shop.empiricalspirits.co" class="navigation__menu__item padding-left-3" ><span>Buy<span></a></li>
         <li class="active"><a href="/cocktails/" class="navigation__menu__item padding-left-3" ><span>Cocktails<span></a></li>
-        <li><a href="/newsletter/" class="navigation__menu__item padding-left-3" ><span>Sign Up<span></a></li>
         <li><a href="/contact/" class="navigation__menu__item padding-left-3" ><span>Contact<span></a></li>
       </ul>
     </div>
     <div class="shrink cell navigation hide-for-large padding-1">
-      <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle">
+      <button class="hamburger hamburger--collapse" data-toggler=".is-active" id="toggle" type="button" data-toggle="offCanvas toggle" data-aos="fade-down">
         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
       </button>
     </div>
@@ -135,24 +144,21 @@ Garnish pictured is a tapioca tuile. Alternative garnish ideas would are bee pol
     <img src="/uploads/theanine-dream.jpg">
     <img src="/uploads/folk-fizz.jpg">
 </div>
-<div class="grid-x grid-padding-x grid-padding-y align-justify" id="footer">
+<div class="grid-x grid-padding-x grid-padding-y align-justify padding-2" id="footer" data-aos="fade-up">
+  <div class="shrink cell align-self-bottom">
+    <a href="https://www.instagram.com/empiricalcph/" target="_blank">© 2018</a>
+  </div>
   <div class="shrink cell">
-    <ul class="menu simple">
+    <ul class="menu vertical text-center">
       <li><a href="https://www.instagram.com/empiricalcph/" target="_blank"><svg class="icon icon-instagram"><use xlink:href="/assets/icons/symbol-defs.svg#icon-instagram"></use></svg></a></li>
       <li><a href="https://www.facebook.com/empiricalcph" target="_blank"><svg class="icon icon-facebook"><use xlink:href="/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>
       <li class="show-for-large"><a href="https://twitter.com/empiricalcph" target="_blank"><svg class="icon icon-twitter"><use xlink:href="/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>
       <li><a href="mailto:someone@yoursite.com"><svg class="icon icon-send"><use xlink:href="/assets/icons/symbol-defs.svg#icon-send"></use></svg></a></li>
     </ul>
   </div>
-  <div class="shrink cell slide-in-down">
-   <ul class="menu simple text-uppercase">
-      <li class="show-for-large"><a href="https://www.instagram.com/empiricalcph/" target="_blank">Terms</a></li>
-      <li class="show-for-large"><a href="https://www.facebook.com/empiricalcph" target="_blank">Privacy</a></li>
-      <li><a href="https://www.facebook.com/empiricalcph" target="_blank">©</a></li>
-    </ul>
-  </div>
 </div>
 </div>
+<script src="/assets/js/min/foundation-min.js"></script>
 <script src="/assets/js/min/app-min.js"></script>
 <script defer src="/assets/js/min/svgxuse-min.js"></script>
 <script>

@@ -3,7 +3,7 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html class="no-js" lang="en" dir="ltr">
+<html lang="en" dir="ltr">
 
 <!-- Head -->
 {% include head.html %}
@@ -11,17 +11,16 @@ layout: compress
 
 <body>
   
-{% if page.layout == "home" %}
- <div class="grid-y align-center loader">
-   <div class="shrink cell">
-     <div class="grid-x grid-padding-x align-center">
-     	<div class="shrink cell text-uppercase" data-aos="fade-up">
-    		<h1>{{site.title}}</h1>
-    	</div>
-   </div>
-  </div>
- </div>
-{% endif %}
+<div class="grid-y align-center loader" data-closable>
+	<div class="shrink cell">
+	 <div class="grid-x grid-padding-x align-center" data-aos="fade-up">
+	 	<div class="shrink cell text-uppercase text-center">
+			<div><img src="/assets/icons/logo.gif" class="age-image"></div>
+			<button type="button" class="button text-uppercase age-button margin-top-1" data-close>I Am Over 18</button>
+		</div>
+	</div>
+	</div>
+</div>
 
 <!-- Off Canvas Navigation -->
 <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlap">
@@ -40,9 +39,9 @@ layout: compress
 
 </div>
 
-<!-- Scripts -->
-{% include scripts.html %}
-<!-- End Scripts -->
+<script src="/assets/js/min/foundation-min.js"></script>
+<script src="/assets/js/min/app-min.js"></script>
+<script defer src="/assets/js/min/svgxuse-min.js"></script>
 
 <script>
 {% if page.layout == "home" %}
