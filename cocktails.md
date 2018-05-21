@@ -1,6 +1,6 @@
 ---
 title: Cocktails
-position: 0
+position: 1
 cocktails:
 - title: Cloud 999
   image: "/uploads/cloud-999.jpg"
