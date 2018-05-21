@@ -75,7 +75,7 @@ svg {
 }
 
 .section-page  {
-//   padding: 5rem 0rem 5rem 0rem;
+  padding: 0rem 1rem 0rem 1rem;
   @include breakpoint(small) {
   height: auto;
   min-height: auto;
