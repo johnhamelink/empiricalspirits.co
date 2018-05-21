@@ -75,8 +75,14 @@ svg {
 }
 
 .section-page  {
-  padding: 5rem 0rem 5rem 0rem;
+//   padding: 5rem 0rem 5rem 0rem;
+  @include breakpoint(small) {
+  height: auto;
+  min-height: auto;
+	}
+  @include breakpoint(medium) {
   min-height: 100vh;
+	}
 }
 
 #preload {
@@ -94,7 +100,7 @@ $aos-distance: 300px !default;
   transform: translate(0, $aos-distance);
 }
 
-#menu {
+.navigation__wrapper {
   @include breakpoint(small) {
 	position:absolute;
 	width: 100%;
@@ -108,16 +114,20 @@ $aos-distance: 300px !default;
 	}
 }
 
-#footer {
-	position:fixed;
-	bottom:0;
+
+.page__navigation__wrapper {
+  @include breakpoint(small) {
+	position:relative;
+	width: 100%;
+  }
+  @include breakpoint(medium) {
+  position:fixed;
+	top:0;
 	left:0;
 	z-index: 14;
 	width: 100%;
-	font-family: $secondary-font-family;
-	letter-spacing: $letter-spacing--loose;
+	}
 }
-
 
 
 // 3. Typography
@@ -320,9 +330,10 @@ i, cite, em, var, address, dfn {
   @include breakpoint(medium) {
   height: 100vh
   }
- }
+}
 
 .home__products__inner {
+  height: 100%;
   background-repeat: no-repeat;
   background-position: 50% 50%; 
   background-size: auto 75%;
@@ -395,4 +406,20 @@ i, cite, em, var, address, dfn {
 
 .contact p {
 	font-family: $secondary-font-family;
+}
+
+
+.footer {
+  z-index: 14;
+	width: 100%;
+	font-family: $secondary-font-family;
+	letter-spacing: $letter-spacing--loose;
+  @include breakpoint(small) {
+  position:relative;
+  }
+  @include breakpoint(medium) {
+	position:fixed;
+	bottom:0;
+	left:0;
+  }
 }
