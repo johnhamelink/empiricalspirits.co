@@ -1,18 +1,5 @@
 $(document).foundation();
 
-// 1. Loading
-// --------------------
-
-/*
-$(function() {
-if (sessionStorage.getItem('set') === 'set') {
-  $('.loader').hide();
-} else {
-  $('.loader').show();
-  sessionStorage.setItem('set', 'set');
-}
-});
-*/
 
 // 2. Animate on Scroll
 // --------------------
@@ -44,3 +31,19 @@ $(".cocktail-link").hover(function() {
 	}, function() {
 	$(".cocktails__inner").css("background-image", '');
 });
+
+
+$(window).scroll(function(){
+    var elementoffset = $('#newsletter').offset(); // <<< change #elementhere with your element you want the scroll to make action when reach it                         
+    if ($(this).scrollTop() < elementoffset.top) {
+        $('.navigation__wrapper').fadeIn(250);
+        $('.footer').fadeIn(250);
+        $('#empirical').fadeOut(500);
+        $('#spirits').fadeOut(500);
+    } else {
+        $('.navigation__wrapper').fadeOut(250);
+        $('.footer').fadeOut(250);
+        $('#empirical').fadeIn(500);
+        $('#spirits').fadeIn(500);
+    }
+ });
