@@ -174,13 +174,6 @@
 		"oAP": "\/_layouts\/missing.html",
 		"oF": 0
 		},
-	"\/_layouts\/newsletter.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_layouts\/newsletter.html",
-		"oF": 0
-		},
 	"\/_site": {
 		"ft": 65536,
 		"oA": 1,
@@ -655,32 +648,12 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/assets\/js\/foundation.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/min\/foundation-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/assets\/js\/min\/app-min.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/assets\/js\/min\/min\/app-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/assets\/js\/min\/foundation-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/min\/min\/foundation-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -8680,24 +8653,6 @@
 		"ft": 4096,
 		"oA": 1,
 		"oAP": "\/LICENSE.html",
-		"oF": 1,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/newsletter.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 2,
-		"oAP": "\/newsletter.md",
 		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
