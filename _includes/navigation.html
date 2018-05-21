@@ -1,4 +1,5 @@
-<div class="home__hero__navigation padding-2" id="menu">
+<div class="navigation__wrapper {% unless page.layout == "home" %}page__navigation__wrapper{% endunless %} padding-2">
+
   {% for entry in site.data.navigation %}{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}{% if fullurl == page.url %}{% assign current_page = fullurl %}{% break %}{% elsif page.url contains fullurl %}{% assign current_page = fullurl %}{% endif %}{% endfor %}
   <!-- Navigation -->
   <div class="grid-x align-justify align-middle">

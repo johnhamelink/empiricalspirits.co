@@ -63,14 +63,14 @@ layout: default
 <!-- End Introduction -->
 
 <!-- Images -->
-<div class="home__images__test" id="home__images__test" style="postition: relative; height: auto; width: 100%;">
+<div class="home__images__test" id="home__images__test">
 	
 	<div style="position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh;">
-		<img style="position: absolute; top: 10%; left: 30%; width: 20%" data-interchange="[{{ "uploads/vacuum.jpg" | imgix_url: w: 480, h: 480, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+		<img style="position: absolute; top: 10%; left: 30%; width: 20%" data-interchange="[{{ "uploads/vacuum.jpg" | imgix_url: w: 728, h: 728, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
 	</div>
 	
 	<div style="position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh;">
-		<img style="position: absolute; top: 20%; left: 10%; width: 35%" data-interchange="[{{ "uploads/barley.jpg" | imgix_url: w: 480, h: 480, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+		<img style="position: absolute; top: 20%; left: 10%; width: 35%" data-interchange="[{{ "uploads/barley.jpg" | imgix_url: w: 728, h: 728, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
 	</div>
 	
 	<div style="position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh;">
@@ -78,11 +78,11 @@ layout: default
 	</div>
 	
 	<div style="position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh;">
-		<img style="position: absolute; bottom: 10%; right: 25%; width: 25%" data-interchange="[{{ "uploads/douglas-fir-02.jpg" | imgix_url: w: 480, h: 480, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+		<img style="position: absolute; bottom: 10%; right: 25%; width: 25%" data-interchange="[{{ "uploads/douglas-fir-02.jpg" | imgix_url: w: 728, h: 728, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
 	</div>
 	
 	<div style="position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh;">
-		<img style="position: absolute; top: 5%; right: 15%; width: 25%" data-interchange="[{{ "uploads/room.jpg" | imgix_url: w: 480, h: 480, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
+		<img style="position: absolute; top: 5%; right: 15%; width: 25%" data-interchange="[{{ "uploads/room.jpg" | imgix_url: w: 728, h: 728, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">
 	</div>
 	
 	<div style="position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh;">
@@ -117,8 +117,8 @@ layout: default
 <!-- End Feature Film -->
 
 <!-- Products -->
-<section class="section home__products" style="height: 100vh;">
-  <div class="grid-y align-center home__products__inner" style="height: 100%">
+<section class="section home__products">
+  <div class="grid-y align-center home__products__inner">
     <div class="shrink cell">
 
     <div class="grid-x" data-aos="fade-up">
@@ -126,8 +126,29 @@ layout: default
           <h5 class="section__title">Bottles</h3>
         </div>
     </div>
+    
+
+    <div class="grid-x grid-padding-x grid-padding-y align-center show-for-small-only" data-aos="fade-up">
+      {% for product in page.products %}
+      <div class="small-12 cell text-uppercase">
+        <a href="{{product.link}}"><h1 class="home__products__title">{{product.title}}</h1></a>
+        <a href="{{product.link}}"><img class="margin-bottom-1" src="{{ product.image }}"></a>
+        <div class="product-details" >
+          <div>Botanicals — {{product.botanicals}}</div>
+          <div>Grains — {{product.grains}}</div>
+          <div>Grains — {{product.koji}}</div>
+          <div>Yeast — {{product.yeast}}</div>
+          {% if product.maturation %}<div>Maturation – {{product.maturation}}</div>{% endif %}
+          <div>Volume — {{product.volume}}</div>
+          <div>ABV — {{product.abv}}</div>
+         </div>
+         <a class="button expanded margin-top-1" href="{{product.link}}">Buy</a>
+      </div>
+      {% endfor %}
+    </div>
+
      
-    <div class="grid-container">
+    <div class="grid-container show-for-medium">
 	    <div class="grid-x grid-padding-x grid-padding-y" data-aos="fade-up">
 	      
 	      <div class="cell small-12 medium-8 text-uppercase">
