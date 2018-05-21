@@ -1,1 +1,1 @@
-$(function(){"set"===sessionStorage.getItem("set")?$(".loader").hide():$(".loader").show()});
+$(function(){"set"===sessionStorage.getItem("set")?$(".loader").hide():($(".loader").show(),sessionStorage.setItem("set","set"))});

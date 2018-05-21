@@ -1,6 +1,15 @@
 $(document).foundation();
 
 
+$(function() {
+if (sessionStorage.getItem('set') === 'set') {
+  $('.loader').hide();
+} else {
+  $('.loader').show();
+  sessionStorage.setItem('set', 'set');
+}
+});
+
 // 2. Animate on Scroll
 // --------------------
 
