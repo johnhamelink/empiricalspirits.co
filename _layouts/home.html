@@ -22,7 +22,7 @@ layout: default
     <div class="home__hero__logo">
       <div class="grid-y align-center" style="height: 100%;">
         <div class="cell shrink text-center text-uppercase" data-aos="fade-up">
-          <h1>Empirical Spirits</h1>
+          <h1>{{site.title}}</h1>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@ layout: default
     <div class="grid-container">
       <div class="grid-x margin-bottom-2 align-center" data-aos="fade-up">
           <div class="small-12 medium-10 large-10 cell text-uppercase">
-            <h2>Empirical Spirits is about swerving the categories</h2>
+            <h2>{{page.introduction-header}}</h2>
           </div>
       </div>
     </div>
@@ -61,7 +61,7 @@ layout: default
 <!-- End Introduction -->
 
 <!-- Images -->
-<div class="home__images__test" id="home__images__test">
+<div class="home__images__test">
 	
 	<div style="position: -webkit-sticky; position: sticky; top: 0; width: 100%; height: 100vh;">
 		<img style="position: absolute; top: 10%; left: 30%; width: 20%" data-interchange="[{{ "uploads/vacuum.jpg" | imgix_url: w: 728, h: 728, auto: "format", lossless: "true", q: 60, fit: "crop", dpr: 1}}, small]" alt="Vacuum">

@@ -1,6 +1,7 @@
 ---
 title: Home
 position: 0
+introduction-header: Empirical Spirits is about swerving categories
 images:
 - image: "/uploads/barley.jpg"
   text: Organic barley.
@@ -121,4 +122,3 @@ stockists:
   link: https://www.sagerandwilde.com
 layout: home
 ---
-
