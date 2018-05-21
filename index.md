@@ -4,7 +4,9 @@ position: 0
 introduction-header: Empirical Spirits is about swerving categories
 introduction-text: |-
   Founded by Lars Williams and Mark Emil Hermansen. Empirical Spirits is a Copenhagen based free-form distillery and fermentation workshop.
+
   Building deliciousness from the base up, each individual ingredient is handpicked for its character and freshness - from local biodynamic grains to bespoke yeasts, and koji strains. Reflecting the variance of nature, our offerings will transform as the season change.
+
   Our homemade vacuum stills operate at roughly 10 degrees Celsius, meaning that rather than heating everything to the typical boiling point, lower temperatures help us to retain the botanical subtleties, as well as the flavors, created during fermentation.
 images:
 - image: "/uploads/barley.jpg"
